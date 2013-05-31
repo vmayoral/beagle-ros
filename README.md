@@ -1,13 +1,52 @@
-My aim is to work in the integration of the Robot Operative System (ROS) and the BeagleBone. Both ROS and the BeagleBone are great tools and increasingly being used in robotics. Having both of them working together in a easy way would be a great asset. A lot of users show their interest for ARM ROS integration. Some made a couple of tutorials about how to install ROS on Ubuntu on the BeagleBoard however this documentation is getting a bit old fashioned and probably not the right way. There's also some code to use lightweight versions of ROS but again, roboticists might not be looking for a light-ROS device but a fully functional one.
+This projecto is part of the Google Summer of Code (GSOC) 2013.
+The aim is to work in the integration of the Robot Operative System (ROS) and the BeagleBone. Both ROS and the BeagleBone are great tools and increasingly being used in robotics. Having both of them working together in a easy way would be a great asset. A lot of users show their interest for ARM ROS integration. Some made a couple of tutorials about how to install ROS on Ubuntu on the BeagleBoard however this documentation is getting a bit old fashioned and probably not the right way. There's also some code to use lightweight versions of ROS but again, roboticists might not be looking for a light-ROS device but a fully functional one.
 Suggested by Koen Kooi (BeagleBoard forums) the meta-ros project looks quite promising. Their aim is to provide ROS in an OpenEmbedded Linux system and clearly they ask for coders and people interested which seems a great starting point.
 
-My overall goal will be to provide the tools and documentation to set an easy ROS set up. Clarify the limitations and enumerate what's available and what's not. Using capes in the BeagleBone is just great and super easy. So why not have them ready for ROS usage as well. This might need a bit of work and i'm excited about diving into it.
+--------------------------------
+ROADMAP
+
+Below the roadmap planned is presented (June 17th - September 17th):
+
+    -> Preparation weeks                    : Complete documentation required by GSOC, set up working environment (blog, code repositories, set up Angstrom in the Beaglebone, start getting familiar with the meta-ros code)
+
+
+
+
+
+    * week 1 (17th June - 23rd June)       : Review previous work. Deploy meta-ros in the BeagleBone.
+    
+    * week 2 (24th June - 30th June)       : Test the installation following (some) ROS Tutorials at http://www.ros.org/wiki/ROS/Tutorials  
+
+    * week 3 (1st July - 7th July)         : Same. Address issues.
+
+    * week 4 (8th July - 14th July)        : Same.
+
+    * week 5 (15th July - 21st July)       : Same.
+
+    * week 6 (22nd July - 28th July)       : Get started with capes & ROS. There's no real need to rewrite drivers for ROS. Assuming that there're already drivers for the capes, it will be required just to publish that information to a ROS topic. In the following weeks I'm expecting one by one to create ROS interfaces to access the different capes.
+
+    * week 7 (29th July - 4th August)      : Audio Cape
+
+    * week 8 (5th August - 11th August)    : Same.
+
+    * week 9 (12th August - 18th August)   : Radarcape
+
+    * week 10 (19th August - 25th August)  : Same. 
+
+    * week 11 (26th August - 1st Septemb)  : Documentation.
+
+    * week 12 (2nd Septemb - 8th Septemb)  : Documentation. Overall review. 
+
+    * week 13 (9th Septemb - 15th Septemb) : Overall review and analysis of the Beagle-ROS integration.  
+
+    
 
 --------------------------------
 
 The MIT License (MIT)
 
 Copyright (c) 2013 Víctor Mayoral Vilches
+Mentored by Koen Kooi.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
