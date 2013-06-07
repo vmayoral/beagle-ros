@@ -6,38 +6,34 @@ Suggested by Koen Kooi (BeagleBoard forums) the meta-ros project looks quite pro
 ROADMAP
 
 Below the roadmap planned is presented (June 17th - September 17th):
+-> Preparation weeks                    : Complete documentation required by GSOC, set up working environment (blog, code repositories, set up Angstrom in the Beaglebone, start getting familiar with the meta-ros code)
+/////////////////////////////////////////////////////////////////////
 
-    -> Preparation weeks                    : Complete documentation required by GSOC, set up working environment (blog, code repositories, set up Angstrom in the Beaglebone, start getting familiar with the meta-ros code)
+* week 1 (17th June - 23rd June)       : Deploying and testing ROS (goal: get rosping working).
 
+* week 2 (24th June - 30th June)       : Deploying and testing ROS: ROS Tutorials at http://www.ros.org/wiki/ROS/Tutorials  (from the 5th one)
 
+* week 3 (1st July - 7th July)         : Same. Address issues.
 
+* week 4 (8th July - 14th July)        : Same.
 
+* week 5 (15th July - 21st July)       : Same.
 
-    * week 1 (17th June - 23rd June)       : Review previous work. Deploy meta-ros in the BeagleBone.
-    
-    * week 2 (24th June - 30th June)       : Test the installation following (some) ROS Tutorials at http://www.ros.org/wiki/ROS/Tutorials  
+* week 6 (22nd July - 28th July)       : Get started with capes & ROS. There's no real need to rewrite drivers for ROS. Assuming that there're already drivers for the capes, it will be required just to publish that information to a ROS topic. In the following weeks I'm expecting one by one to create ROS interfaces to access the different capes.
 
-    * week 3 (1st July - 7th July)         : Same. Address issues.
+* week 7 (29th July - 4th August)      : Audio Cape
 
-    * week 4 (8th July - 14th July)        : Same.
+* week 8 (5th August - 11th August)    : Same.
 
-    * week 5 (15th July - 21st July)       : Same.
+* week 9 (12th August - 18th August)   : Motors and IMU.
 
-    * week 6 (22nd July - 28th July)       : Get started with capes & ROS. There's no real need to rewrite drivers for ROS. Assuming that there're already drivers for the capes, it will be required just to publish that information to a ROS topic. In the following weeks I'm expecting one by one to create ROS interfaces to access the different capes.
+* week 10 (19th August - 25th August)  : Same. 
 
-    * week 7 (29th July - 4th August)      : Audio Cape
+* week 11 (26th August - 1st Septemb)  : Documentation.
 
-    * week 8 (5th August - 11th August)    : Same.
+* week 12 (2nd Septemb - 8th Septemb)  : Documentation. Overall review. 
 
-    * week 9 (12th August - 18th August)   : Radarcape
-
-    * week 10 (19th August - 25th August)  : Same. 
-
-    * week 11 (26th August - 1st Septemb)  : Documentation.
-
-    * week 12 (2nd Septemb - 8th Septemb)  : Documentation. Overall review. 
-
-    * week 13 (9th Septemb - 15th Septemb) : Overall review and analysis of the Beagle-ROS integration.  
+* week 13 (9th Septemb - 15th Septemb) : Overall review and analysis of the Beagle-ROS integration. 
 
     
 
