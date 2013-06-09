@@ -41,7 +41,7 @@ Below the roadmap planned is presented (June 17th - September 17th):
 
 The MIT License (MIT)
 
-Copyright (c) 2013 Víctor Mayoral Vilches
+Copyright (c) 2013 Víctor Mayoral Vilches.
 Mentored by Koen Kooi.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
