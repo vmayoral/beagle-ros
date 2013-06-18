@@ -1,6 +1,15 @@
 #!/bin/sh
 
+# Based on http://www.angstrom-distribution.org/repo/ - 06.09.2013
 
+# Necessary packages:
+opkg install python-core
+opkg install make
+opkg install gcc
+opkg install g++
+opkg install g++-symlinks 
+
+# ROS related packages
 opkg install python-rospkg
 opkg install python-rospkg-dbg
 opkg install python-rospkg-dev
@@ -26,6 +35,9 @@ opkg install rosgraph-msgs-commonlisp
 opkg install rosgraph-msgs-dev
 opkg install roslang
 opkg install roslang-dev
+opkg install roslaunch
+opkg install roslaunch-dbg
+opkg install roslaunch-dev
 opkg install roslib
 opkg install roslib-dev
 opkg install rosmake
@@ -56,3 +68,10 @@ opkg install rosunit
 opkg install rosunit-dev
 opkg install roswtf
 opkg install roswtf-dev
+opkg install catkin
+opkg install catkin-dev
+opkg install catkin-dbg
+opkg install python-catkin-pkg
+opkg install python-catkin-pkg-dev
+
+
