@@ -11,7 +11,7 @@ Below the roadmap planned is presented (June 17th - September 17th):
 
 * week 1 (17th June - 23rd June)       : Deploying and testing meta-ROS (goal: get rosping working).
 
-* week 2 (24th June - 30th June)       : Deploying and testing meta-ROS: ROS Tutorials at http://www.ros.org/wiki/ROS/Tutorials  (from the 5th one)
+* week 2 (24th June - 30th June)       : Deploying and testing meta-ROS: ROS Tutorials at http://www.ros.org/wiki/ROS/Tutorials  (from the 1-4, 5-end)
 
 * week 3 (1st July - 7th July)         : Same. Address issues.
 
