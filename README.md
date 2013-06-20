@@ -12,7 +12,7 @@ Get an Angstrom distribution following http://www.angstrom-distribution.org/buil
 
 Put the MLO, u-boot and FS in the SD card as explained in http://downloads.angstrom-distribution.org/demo/beaglebone/.
 
-source the ros-angstrom.sh.
+source the *ros-angstrom.sh*.
 
 
 
