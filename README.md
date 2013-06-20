@@ -49,6 +49,7 @@ Below the roadmap planned is presented (June 17th - September 17th):
 * week 12 (2nd Septemb - 8th Septemb)  : Documentation. Overall review. 
 
 * week 13 (9th Septemb - 15th Septemb) : Overall review and analysis of the Beagle-ROS integration. 
+
 ---------
 
     
