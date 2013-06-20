@@ -5,7 +5,6 @@ This project is part of the Google Summer of Code (GSOC) 2013.
 The aim is to work in the integration of the Robot Operative System (ROS) and the BeagleBone. Both ROS and the BeagleBone are great tools and increasingly being used in robotics. Having both of them working together in a easy way would be a great asset. A lot of users show their interest for ARM ROS integration. Some made a couple of tutorials about how to install ROS on Ubuntu on the BeagleBoard however this documentation is getting a bit old fashioned and probably not the right way. There's also some code to use lightweight versions of ROS but again, roboticists might not be looking for a light-ROS device but a fully functional one.
 Suggested by Koen Kooi (BeagleBoard forums) the meta-ros project looks quite promising. Their aim is to provide ROS in an OpenEmbedded Linux system and clearly they ask for coders and people interested which seems a great starting point.
 
---------------------------------
 USAGE
 =====
 
@@ -17,7 +16,6 @@ source the ros-angstrom.sh.
 
 
 
---------------------------------
 ROADMAP
 =======
 
@@ -53,7 +51,6 @@ Below the roadmap planned is presented (June 17th - September 17th):
 
     
 
---------------------------------
 LICENSE:
 =======
 
