@@ -1,9 +1,25 @@
+BEAGLE-ROS project
+==================
+
 This project is part of the Google Summer of Code (GSOC) 2013.
 The aim is to work in the integration of the Robot Operative System (ROS) and the BeagleBone. Both ROS and the BeagleBone are great tools and increasingly being used in robotics. Having both of them working together in a easy way would be a great asset. A lot of users show their interest for ARM ROS integration. Some made a couple of tutorials about how to install ROS on Ubuntu on the BeagleBoard however this documentation is getting a bit old fashioned and probably not the right way. There's also some code to use lightweight versions of ROS but again, roboticists might not be looking for a light-ROS device but a fully functional one.
 Suggested by Koen Kooi (BeagleBoard forums) the meta-ros project looks quite promising. Their aim is to provide ROS in an OpenEmbedded Linux system and clearly they ask for coders and people interested which seems a great starting point.
 
 --------------------------------
+USAGE
+=====
+
+Get an Angstrom distribution following http://www.angstrom-distribution.org/building-angstrom.
+
+Put the MLO, u-boot and FS in the SD card as explained in http://downloads.angstrom-distribution.org/demo/beaglebone/.
+
+source the ros-angstrom.sh.
+
+
+
+--------------------------------
 ROADMAP
+=======
 
 Below the roadmap planned is presented (June 17th - September 17th):
 -> Preparation weeks                    : Complete documentation required by GSOC, set up working environment (blog, code repositories, set up Angstrom in the Beaglebone, start getting familiar with the meta-ros code)
@@ -38,6 +54,8 @@ Below the roadmap planned is presented (June 17th - September 17th):
     
 
 --------------------------------
+LICENSE:
+=======
 
 The MIT License (MIT)
 

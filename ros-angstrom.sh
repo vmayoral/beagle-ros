@@ -74,4 +74,10 @@ opkg install catkin-dbg
 opkg install python-catkin-pkg
 opkg install python-catkin-pkg-dev
 
+# copy importlib
+#cp libs/importlib /usr/lib/python2.7/
+
+
+#ROS_ROOT is not set by sourcing the /usr/setup.sh
+#export ROS_ROOT="/usr/share/ros"
 
