@@ -21,7 +21,8 @@ ROADMAP
 
 Below the roadmap planned is presented (June 17th - September 17th):
 -> Preparation weeks                    : Complete documentation required by GSOC, set up working environment (blog, code repositories, set up Angstrom in the Beaglebone, start getting familiar with the meta-ros code)
-/////////////////////////////////////////////////////////////////////
+
+---------------
 
 * week 1 (17th June - 23rd June)       : Deploying and testing meta-ROS (goal: get rosping working).
 
@@ -48,6 +49,7 @@ Below the roadmap planned is presented (June 17th - September 17th):
 * week 12 (2nd Septemb - 8th Septemb)  : Documentation. Overall review. 
 
 * week 13 (9th Septemb - 15th Septemb) : Overall review and analysis of the Beagle-ROS integration. 
+---------
 
     
 
