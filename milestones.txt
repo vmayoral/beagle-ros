@@ -1,6 +1,0 @@
-Milestones of the Beagle-ROS project:
-====================================
-    
-    - Angstrom distribution running in the BB
-    - Script for installing ROS
-    - roscore running locally
