@@ -1,0 +1,24 @@
+Reports of the Beagle-ROS project:
+====================================
+====================================
+
+Week 1:
+=======
+What has been accomplished?:
+    - Angstrom distribution running in the BB
+    - ROS running installed in Angstrom through the script https://github.com/vmayoral/beagle-ros/blob/master/ros-angstrom.sh
+    - roscore running
+    - ros installation working against an external master (rosnode list and rosnode ping)
+
+ Issues:
+    - It seems ROS nodes doesn't start properly. This is an issue previosly opened in the meta-ros project https://github.com/bmwcarit/meta-ros/issues/68. I'm actively working to find a solution with the meta-ros guys https://github.com/bmwcarit/meta-ros/issues/10  but it might take a while since this issue has been open for some time already.
+    - catkin_make doesn't work. Neither it does going through the process manually http://www.ros.org/wiki/catkin/commands/catkin_make.
+
+ Plans for the next week:
+    - Adress the first issue. Try to make the ROS nodes start properly. Some debugging will be necessary.
+    - Address catkin_make issue.
+    - complete the rosping milestone
+    - keep working in the roadmap planned (ROS tutorials for now).
+
+    
+

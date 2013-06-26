@@ -1,0 +1,22 @@
+ROS Tutorials (http://www.ros.org/wiki/ROS/Tutorials)
+
+Tutorial 1 
+==========
+(http://www.ros.org/wiki/ROS/Tutorials/InstallingandConfiguringROSEnvironment):
+
+    - Issue with catkin_make
+
+
+
+Tutorial 2
+==========
+(http://www.ros.org/wiki/ROS/Tutorials/NavigatingTheFilesystem)
+
+    - roscd (part of the rosbash suite) not working
+
+
+Tutorial 3
+==========
+(http://www.ros.org/wiki/ROS/Tutorials/CreatingPackage)
+
+    - 

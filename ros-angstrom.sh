@@ -81,3 +81,12 @@ opkg install python-catkin-pkg-dev
 #ROS_ROOT is not set by sourcing the /usr/setup.sh
 #export ROS_ROOT="/usr/share/ros"
 
+
+# Install the chatter-sender
+opkg install chatter-msgs
+opkg install chatter-msgs-dev
+opkg install chatter-msgs-commonlisp
+opkg install chatter-receiver
+opkg install chatter-receiver-dev
+opkg install chatter-sender
+opkg install chatter-sender-dev
