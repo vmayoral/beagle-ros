@@ -22,3 +22,21 @@ What has been accomplished?:
 
     
 
+Week 2:
+=======
+What has been accomplished?:
+    - Several tests with ROS nodes and ping. It seems the nodes launched from external cores work fine while the nodes launched from the BeagleBone (Angstrom, meta-ros) don't seem to work. See issue #10 at the meta-ros code (https://github.com/bmwcarit/meta-ros/issues/10)
+    - python-catkin updated. Due to this update there's some progress in the catkin_make process
+    - started debugging the ros nodes
+
+ Issues:
+    - ROS nodes still doesn't work as expected. See the debug logs at #10.
+    - catkin_make doesn't fully work in Angstrom. See #99 (https://github.com/bmwcarit/meta-ros/issues/99).
+
+ Plans for the next week:
+    - Address catkin_make issue.
+    - Keep debugging the nodes.
+    - keep working in the roadmap planned (ROS tutorials for now).
+
+    
+

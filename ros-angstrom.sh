@@ -4,10 +4,19 @@
 
 # Necessary packages:
 opkg install python-core
-opkg install make
-opkg install gcc
-opkg install g++
-opkg install g++-symlinks 
+# Users are advised not to manually install gcc, libgcc etc. as resolving the dependencies correctly can be challenging.
+opkg install task-native-sdk
+
+# Angstrom linux headers
+#opkg install kernel-headers
+#opkg install kernel-dev
+# Set the link to the headers
+# ln -s /usr/src/kernel/ build 
+
+#opkg install make
+#opkg install gcc
+#opkg install g++
+#opkg install g++-symlinks 
 
 # ROS related packages
 opkg install python-rospkg
