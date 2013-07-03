@@ -40,3 +40,16 @@ What has been accomplished?:
 
     
 
+Week 3:
+=======
+What has been accomplished?:
+    - ROS nodes now work properly if launched from the bone. ROS ping works from every every node now.
+
+ Issues:
+    -
+
+ Plans for the next week:
+    -
+
+    
+

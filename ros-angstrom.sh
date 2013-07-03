@@ -2,10 +2,15 @@
 
 # Based on http://www.angstrom-distribution.org/repo/ - 06.09.2013
 
+# Update and upgrade first
+opkg update
+opkg upgrade
+
 # Necessary packages:
 opkg install python-core
 # Users are advised not to manually install gcc, libgcc etc. as resolving the dependencies correctly can be challenging.
 opkg install task-native-sdk
+opkg install subversion
 
 # Angstrom linux headers
 #opkg install kernel-headers
@@ -82,6 +87,7 @@ opkg install catkin-dev
 opkg install catkin-dbg
 opkg install python-catkin-pkg
 opkg install python-catkin-pkg-dev
+opkg install rosbash rosbash-dev rosbash-dbg
 
 # copy importlib
 #cp libs/importlib /usr/lib/python2.7/
@@ -99,3 +105,5 @@ opkg install chatter-receiver
 opkg install chatter-receiver-dev
 opkg install chatter-sender
 opkg install chatter-sender-dev
+
+

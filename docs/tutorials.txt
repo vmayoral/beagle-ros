@@ -14,10 +14,11 @@ Tutorial 2
 (http://www.ros.org/wiki/ROS/Tutorials/NavigatingTheFilesystem)
 
     - roscd (part of the rosbash suite) not working
+    - installed rosbash
 
 
 Tutorial 3
 ==========
 (http://www.ros.org/wiki/ROS/Tutorials/CreatingPackage)
-
-    - 
+    
+    - rospack depends1 beginner_tutorials - doesn't work. 
