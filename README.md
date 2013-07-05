@@ -8,11 +8,15 @@ Suggested by Koen Kooi (BeagleBoard forums) the meta-ros project looks quite pro
 USAGE
 =====
 
-Get an Angstrom distribution following http://www.angstrom-distribution.org/building-angstrom.
+* Get an Angstrom distribution following http://www.angstrom-distribution.org/building-angstrom.
 
-Put the MLO, u-boot and FS in the SD card as explained in http://downloads.angstrom-distribution.org/demo/beaglebone/.
+* Put the MLO, u-boot and FS in the SD card as explained in http://downloads.angstrom-distribution.org/demo/beaglebone/.
 
-source the *ros-angstrom.sh*.
+* Install all the packages for ROS in Angstrom sourcing `scripts/install-ros-angstrom.sh`.
+
+* source `/usr/setup.bash`.
+
+* run `roscore`.
 
 
 

@@ -1,7 +1,7 @@
 Issues with ROS Tutorials (http://www.ros.org/wiki/ROS/Tutorials)
 
 
-Tutorial 1 
+Tutorial 1. Installing and Configuring Your ROS Environment 
 ==========
 (http://www.ros.org/wiki/ROS/Tutorials/InstallingandConfiguringROSEnvironment):
 
@@ -10,7 +10,7 @@ Tutorial 1
 
 
 
-Tutorial 2
+Tutorial 2. Navigating the ROS Filesystem
 ==========
 (http://www.ros.org/wiki/ROS/Tutorials/NavigatingTheFilesystem)
 
@@ -22,36 +22,38 @@ Tutorial 2
 
 
 
-Tutorial 3
+Tutorial 3. Creating a ROS Package
 ==========
 (http://www.ros.org/wiki/ROS/Tutorials/CreatingPackage)
     
     - rospack depends1 beginner_tutorials (or roscpp) not working properly
-        rosdep init
-        rosdep update
-        rospack depends1 roscpp
-Traceback (most recent call last):
-  File "/usr/lib/python2.7/site-packages/rosdep2/rospack.py", line 55, in init_rospack_interface
-    lookup = _get_default_RosdepLookup(Options())
-  File "/usr/lib/python2.7/site-packages/rosdep2/main.py", line 107, in _get_default_RosdepLookup
-    verbose=options.verbose)
-  File "/usr/lib/python2.7/site-packages/rosdep2/sources_list.py", line 497, in create_default
-    matcher = DataSourceMatcher.create_default(os_override=os_override)
-  File "/usr/lib/python2.7/site-packages/rosdep2/sources_list.py", line 229, in create_default
-    os_name, os_version, os_codename = os_detect.detect_os()
-  File "/usr/lib/python2.7/site-packages/rospkg/os_detect.py", line 404, in detect_os
-    raise OsNotDetected("Could not detect OS, tried %s"%attempted)
-rospkg.os_detect.OsNotDetected: Could not detect OS, tried ['ubuntu', 'rhel', 'osx', 'opensuse', 'mint', 'gentoo', 'freebsd', 'fedora', 'debian', 'cygwin', 'arch']
-Traceback (most recent call last):
-  File "/usr/lib/python2.7/site-packages/rosdep2/rospack.py", line 55, in init_rospack_interface
-    lookup = _get_default_RosdepLookup(Options())
-  File "/usr/lib/python2.7/site-packages/rosdep2/main.py", line 107, in _get_default_RosdepLookup
-    verbose=options.verbose)
-  File "/usr/lib/python2.7/site-packages/rosdep2/sources_list.py", line 497, in create_default
-    matcher = DataSourceMatcher.create_default(os_override=os_override)
-  File "/usr/lib/python2.7/site-packages/rosdep2/sources_list.py", line 229, in create_default
-    os_name, os_version, os_codename = os_detect.detect_os()
-  File "/usr/lib/python2.7/site-packages/rospkg/os_detect.py", line 404, in detect_os
-    raise OsNotDetected("Could not detect OS, tried %s"%attempted)
-rospkg.os_detect.OsNotDetected: Could not detect OS, tried ['ubuntu', 'rhel', 'osx', 'opensuse', 'mint', 'gentoo', 'freebsd', 'fedora', 'debian', 'cygwin', 'arch']
-[rospack] Error: could not call python function 'rosdep2.rospack.init_rospack_interface'
+    - error. see issue https://github.com/bmwcarit/meta-ros/issues/108
+    - Answered at https://github.com/bmwcarit/meta-ros/issues/108
+    rosdep is a tool for managing the package dependencies in various distributions uniformly. To get rosdep working, you would have to know which package manager your distribution uses (I think Angstrom uses ipkg), and them add support for that tool in rosdep. Furtermore, you would have to provide a mapping from ubuntu package names to ipkg package names in the yaml file.
+    I consider this a lot of work for just a minor point, namely to use rosdep instead of using ipkg, which works nicely anyway. Maybe, it is better when you look into the more advanced ROS application tutorials and try to cross-compile those and make a documentation how to write recipes for those. The system/developer tools, like catkin_make and rosdep, do not need to run on the beagleboard anyway when you cross-compile.
+
+
+Tutorial 4. Creating a workspace for catkin
+==========
+(http://www.ros.org/wiki/catkin/Tutorials/create_a_workspace)
+
+    - Completed
+
+
+Tutorial 5. Building a ROS Package
+==========
+(http://www.ros.org/wiki/ROS/Tutorials/BuildingPackages)
+
+    - Error. See issue https://github.com/bmwcarit/meta-ros/issues/109
+    - Answer at https://github.com/bmwcarit/meta-ros/issues/109
+    This is a clone of #103. As I said there, it is difficult and of low priority. You do not want to compile on the target anyway, but you want to compile the beginner tutorials on the host system for the target and then only run the tutorials on the target system. How about creating a recipe for the beginner_tutorials?
+
+
+
+Tutorial 6. Creating a ROS Package (seems to be same as Tutorial 3)
+==========
+
+
+Tutorial 7. Understanding ROS Nodes
+==========
+(http://www.ros.org/wiki/ROS/Tutorials/UnderstandingNodes)
