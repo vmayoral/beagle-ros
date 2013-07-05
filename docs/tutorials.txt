@@ -5,7 +5,7 @@ Tutorial 1
 ==========
 (http://www.ros.org/wiki/ROS/Tutorials/InstallingandConfiguringROSEnvironment):
 
-    - Issue with catkin_make
+    - Completed
 
 
 

@@ -1,20 +1,21 @@
-From 30b73ddd1c3ddbd03a083c2ad9c4fcedf7749d32 Mon Sep 17 00:00:00 2001
+From e3158fd03c049385347c9d13ae8521cc3c343107 Mon Sep 17 00:00:00 2001
 From: victor <v.mayoralv@gmail.com>
 Date: Mon, 1 Jul 2013 14:46:42 +0200
-Subject: [PATCH] apr_cv_mutex_recursive=yes added to apr_1.4.6.bb to make
- rosnodes work
+Subject: [PATCH] apr: add apr_cv_mutex_recursive=yes to support meta-ros
 MIME-Version: 1.0
 Content-Type: text/plain; charset=UTF-8
 Content-Transfer-Encoding: 8bit
 
-Working with the meta-ros project we detected that the ROS nodes didn't launch properly
-the reason was that by default apr_cv_mutex_recursive in apr is set to no and this leads
+By default apr_cv_mutex_recursive in apr is set to "no" and this leads
 to the APRENOTIMPL return value of apr_thread_mutex_create in thread_mutex.c when
-APR_THREAD_MUTEX_NESTED is requested via flags.
+APR_THREAD_MUTEX_NESTED is requested via flags which leads to a deadlock in applications
+using apr, as observed in an application with log4cxx.
 
-Added CACHED_CONFIGUREVARS += "apr_cv_mutex_recursive=yes" to sources/openembedded-core/meta/recipes-support/apr/apr_1.4.6.bb
-to fix this issue. It has also been removed the mention of this variable in
-meta/site/powerpc32-linux.
+This commit adds CACHED_CONFIGUREVARS += "apr_cv_mutex_recursive=yes" to apr_1.4.6.bb
+and removes this variable in powerpc32-linux to address this issue.
+
+We detected this issue while working at the meta-ros project https://github.com/bmwcarit/meta-ros
+(https://github.com/bmwcarit/meta-ros/issues/68)
 
 Signed-off-by: Víctor Mayoral Vilches <v.mayoralv@gmail.com>
 ---
