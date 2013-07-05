@@ -88,6 +88,7 @@ opkg install catkin-dbg
 opkg install python-catkin-pkg
 opkg install python-catkin-pkg-dev
 opkg install rosbash rosbash-dev rosbash-dbg
+opkg install python-rosdep python-rosdep-dev python-rosdep-dbg
 
 # copy importlib
 #cp libs/importlib /usr/lib/python2.7/

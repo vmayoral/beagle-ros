@@ -5,6 +5,7 @@ Tutorial 1
 ==========
 (http://www.ros.org/wiki/ROS/Tutorials/InstallingandConfiguringROSEnvironment):
 
+    - Initial issues with catkin_make
     - Completed
 
 
@@ -13,12 +14,44 @@ Tutorial 2
 ==========
 (http://www.ros.org/wiki/ROS/Tutorials/NavigatingTheFilesystem)
 
-    - roscd (part of the rosbash suite) not working
-    - installed rosbash
+    - In order to work with rosbash suite, it's necessary to source setup.bash (surprisingly if setup.sh is sourced it doesn't get in the PATH)
+    - Necessary to set up ROS_WORKSPACE
+         export ROS_WORKSPACE="/home/root/catkin_ws"
+    -  $ROS_PACKAGE_PATH correctly set if the setup.bash sourced is the one in the workspace
+    - Completed
+
 
 
 Tutorial 3
 ==========
 (http://www.ros.org/wiki/ROS/Tutorials/CreatingPackage)
     
-    - rospack depends1 beginner_tutorials - doesn't work. 
+    - rospack depends1 beginner_tutorials (or roscpp) not working properly
+        rosdep init
+        rosdep update
+        rospack depends1 roscpp
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/rosdep2/rospack.py", line 55, in init_rospack_interface
+    lookup = _get_default_RosdepLookup(Options())
+  File "/usr/lib/python2.7/site-packages/rosdep2/main.py", line 107, in _get_default_RosdepLookup
+    verbose=options.verbose)
+  File "/usr/lib/python2.7/site-packages/rosdep2/sources_list.py", line 497, in create_default
+    matcher = DataSourceMatcher.create_default(os_override=os_override)
+  File "/usr/lib/python2.7/site-packages/rosdep2/sources_list.py", line 229, in create_default
+    os_name, os_version, os_codename = os_detect.detect_os()
+  File "/usr/lib/python2.7/site-packages/rospkg/os_detect.py", line 404, in detect_os
+    raise OsNotDetected("Could not detect OS, tried %s"%attempted)
+rospkg.os_detect.OsNotDetected: Could not detect OS, tried ['ubuntu', 'rhel', 'osx', 'opensuse', 'mint', 'gentoo', 'freebsd', 'fedora', 'debian', 'cygwin', 'arch']
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/rosdep2/rospack.py", line 55, in init_rospack_interface
+    lookup = _get_default_RosdepLookup(Options())
+  File "/usr/lib/python2.7/site-packages/rosdep2/main.py", line 107, in _get_default_RosdepLookup
+    verbose=options.verbose)
+  File "/usr/lib/python2.7/site-packages/rosdep2/sources_list.py", line 497, in create_default
+    matcher = DataSourceMatcher.create_default(os_override=os_override)
+  File "/usr/lib/python2.7/site-packages/rosdep2/sources_list.py", line 229, in create_default
+    os_name, os_version, os_codename = os_detect.detect_os()
+  File "/usr/lib/python2.7/site-packages/rospkg/os_detect.py", line 404, in detect_os
+    raise OsNotDetected("Could not detect OS, tried %s"%attempted)
+rospkg.os_detect.OsNotDetected: Could not detect OS, tried ['ubuntu', 'rhel', 'osx', 'opensuse', 'mint', 'gentoo', 'freebsd', 'fedora', 'debian', 'cygwin', 'arch']
+[rospack] Error: could not call python function 'rosdep2.rospack.init_rospack_interface'
