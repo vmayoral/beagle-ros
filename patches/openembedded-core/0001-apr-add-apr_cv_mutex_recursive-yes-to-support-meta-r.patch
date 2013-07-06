@@ -1,0 +1,54 @@
+From e3158fd03c049385347c9d13ae8521cc3c343107 Mon Sep 17 00:00:00 2001
+From: victor <v.mayoralv@gmail.com>
+Date: Mon, 1 Jul 2013 14:46:42 +0200
+Subject: [PATCH] apr: add apr_cv_mutex_recursive=yes to support meta-ros
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+
+By default apr_cv_mutex_recursive in apr is set to "no" and this leads
+to the APRENOTIMPL return value of apr_thread_mutex_create in thread_mutex.c when
+APR_THREAD_MUTEX_NESTED is requested via flags which leads to a deadlock in applications
+using apr, as observed in an application with log4cxx.
+
+This commit adds CACHED_CONFIGUREVARS += "apr_cv_mutex_recursive=yes" to apr_1.4.6.bb
+and removes this variable in powerpc32-linux to address this issue.
+
+We detected this issue while working at the meta-ros project https://github.com/bmwcarit/meta-ros
+(https://github.com/bmwcarit/meta-ros/issues/68)
+
+Signed-off-by: Víctor Mayoral Vilches <v.mayoralv@gmail.com>
+---
+ meta/recipes-support/apr/apr_1.4.6.bb |    3 +++
+ meta/site/powerpc32-linux             |    1 -
+ 2 files changed, 3 insertions(+), 1 deletion(-)
+
+diff --git a/meta/recipes-support/apr/apr_1.4.6.bb b/meta/recipes-support/apr/apr_1.4.6.bb
+index 896f79f..ba59639 100644
+--- a/meta/recipes-support/apr/apr_1.4.6.bb
++++ b/meta/recipes-support/apr/apr_1.4.6.bb
+@@ -23,6 +23,9 @@ inherit autotools lib_package binconfig multilib_header
+ 
+ OE_BINCONFIG_EXTRA_MANGLE = " -e 's:location=source:location=installed:'"
+ 
++# Added to fix some issues with cmake. Refer to https://github.com/bmwcarit/meta-ros/issues/68#issuecomment-19896928
++CACHED_CONFIGUREVARS += "apr_cv_mutex_recursive=yes"
++
+ do_configure_prepend() {
+ 	cd ${S}
+ 	./buildconf
+diff --git a/meta/site/powerpc32-linux b/meta/site/powerpc32-linux
+index 4550df3..b3973c9 100644
+--- a/meta/site/powerpc32-linux
++++ b/meta/site/powerpc32-linux
+@@ -203,7 +203,6 @@ apr_cv_use_lfs64=${apr_cv_use_lfs64=yes}
+ apr_cv_epoll=${apr_cv_epoll=yes}
+ apr_cv_pthreads_cflags=${apr_cv_pthreads_cflags=-pthread}
+ apr_cv_pthreads_lib=${apr_cv_pthreads_lib=-lpthread}
+-apr_cv_mutex_recursive=${apr_cv_mutex_recursive=yes}
+ ac_cv_func_mmap=${ac_cv_func_mmap=yes}
+ ac_cv_file__dev_zero=${ac_cv_file__dev_zero=yes}
+ ac_cv_sizeof_off_t=${ac_cv_sizeof_off_t=4}
+-- 
+1.7.9.5
+
