@@ -16,7 +16,7 @@ Tutorial 2. Navigating the ROS Filesystem
 
     - In order to work with rosbash suite, it's necessary to source setup.bash (surprisingly if setup.sh is sourced it doesn't get in the PATH)
     - Necessary to set up ROS_WORKSPACE
-         export ROS_WORKSPACE="/home/root/catkin_ws"
+         export ROS_WORKSPACE="/home/root/catkin_ws/devel/"
     -  $ROS_PACKAGE_PATH correctly set if the setup.bash sourced is the one in the workspace
     - Completed
 
@@ -57,3 +57,25 @@ Tutorial 6. Creating a ROS Package (seems to be same as Tutorial 3)
 Tutorial 7. Understanding ROS Nodes
 ==========
 (http://www.ros.org/wiki/ROS/Tutorials/UnderstandingNodes)
+    - Completed.
+        Turtlesim has been run in a Desktop machine agains the core running in the beaglebone. It's necessary to set the hosts at /etc/hosts
+    - The nodes that have been launched even after stopping them "rosnode list" shows them. This is an issue that also appears in the Desktop version of ROS. (this seems to happen with turtlesim)
+
+
+Tutorial 8. Building and using catkin packages in a workspace
+==========
+(http://www.ros.org/wiki/catkin/Tutorials/using_a_workspace)
+    - Since building (for now) will be done using the cross-compiler (see issues with Tutorial 5) the deployment of the packages built won't be done through "catkin_make" install
+        but it will be decided through the bitbake recipes.
+
+
+Tutorial 9. Understanding ROS Topics
+==========
+(http://www.ros.org/wiki/ROS/Tutorials/UnderstandingTopics)
+    - Completed (the turtlesim and rqt_graph were run in a Desktop machine)
+
+
+Tutorial 15. Using rosed to edit files in ROS
+==========
+(http://www.ros.org/wiki/ROS/Tutorials/UsingRosEd)
+    - Completed
