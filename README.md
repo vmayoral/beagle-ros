@@ -20,7 +20,6 @@ The aim is to work in the integration of the Robot Operative System (ROS) and th
 
 * recipes: OpenEmbedded recipes.
 
-* packages: ROS packages.
 
 USAGE
 =====

@@ -45,12 +45,19 @@ Week 3:
 What has been accomplished?:
     - ROS nodes now work properly if launched from the bone. ROS ping works from every every node now.
     - catkin_make issue solved.
+    - Progress with tutorials.
 
  Issues:
-    -
+    - rospack depends1 not working (meta-ros issue #108). For now this task will be left for a latter time.
+    - building ROS packages in the bone using catkin_make (meta-ros issue #109). Like the previous one, it requires too much work for now. 
 
  Plans for the next week:
-    -
+    - Since building the ROS packages natively with catkin_make might lead to a route that could take several weeks to complete, this task will be done
+        using the cross-compiler. A tutorial will be created for this purpose.
+    - Continue with ROS tutorials.
+
+
+
 
     
 
