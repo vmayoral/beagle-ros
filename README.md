@@ -18,11 +18,14 @@ The aim is to work in the integration of the Robot Operative System (ROS) and th
 
 * patches: Patches. 
 
-* recipes: OpenEmbedded recipes. These recipes should be used with the meta-ros code. There're instructions in https://github.com/vmayoral/beginner_tutorials/blob/master/README.md of how to put these recipes in the meta-ros file structure.
+* recipes: OpenEmbedded recipes. These recipes should be used with the meta-ros code.
+
+
 
 
 USAGE
 =====
+##Getting roscore running
 
 * Get an Angstrom distribution following http://www.angstrom-distribution.org/building-angstrom.
 
@@ -34,6 +37,12 @@ USAGE
 
 * run `roscore`.
     
+##Installing the recipes
+The easiest way to install the recipes is to `git clone` the beagle-ros code directly into the Angstrom `sources/` directory and add the beagle-ros as a layer:
+* Edit `conf/bblayers.conf`
+* add `${TOPDIR}/sources/beagle-ros \` to the `BASELAYERS` variable
+
+It's also possible to add the recipes inside of the meta-ros code. There're instructions in https://github.com/vmayoral/beginner_tutorials/blob/master/README.md of how to put these recipes in the meta-ros file structure.
 
 LICENSE:
 =======
