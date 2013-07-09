@@ -58,6 +58,14 @@ What has been accomplished?:
 
 
 
+Week 4:
+=======
+What has been accomplished?:
+    - More progress with tutorials.
+    - Cross-compilation ROS package example created.
 
+ Issues:
+    -
     
-
+ Plans for the next week:
+    - 

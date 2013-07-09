@@ -18,7 +18,7 @@ The aim is to work in the integration of the Robot Operative System (ROS) and th
 
 * patches: Patches. 
 
-* recipes: OpenEmbedded recipes.
+* recipes: OpenEmbedded recipes. These recipes should be used with the meta-ros code. There're instructions in https://github.com/vmayoral/beginner_tutorials/blob/master/README.md of how to put these recipes in the meta-ros file structure.
 
 
 USAGE
