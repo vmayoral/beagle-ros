@@ -44,6 +44,9 @@ The easiest way to install the recipes is to `git clone` the beagle-ros code dir
 
 It's also possible to add the recipes inside of the meta-ros code. There're instructions in https://github.com/vmayoral/beginner_tutorials/blob/master/README.md of how to put these recipes in the meta-ros file structure.
 
+##Cross-compiling the recipes
+From the `TOPDIR` of Angstrom run `bitbake <recipe-name>` such as for example `bitbake beginner-tutorials`.
+
 LICENSE:
 =======
 
