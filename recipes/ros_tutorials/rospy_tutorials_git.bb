@@ -8,7 +8,7 @@ DEPENDS = "roscpp"
 SRC_URI = "https://github.com/ros/ros_tutorials.git"
 
 SRCREV = "${AUTOREV}"
-PV = "1.0.0+gitr${SRCPV}"
+PV = "1.0.0+gitr${SRCREV}"
 
 S = "${WORKDIR}/git/rospy_tutorials"
 
