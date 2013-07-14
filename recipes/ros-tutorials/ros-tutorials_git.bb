@@ -5,7 +5,7 @@ LIC_FILES_CHKSUM = "file://ros_tutorials/package.xml;md5=485c8885ffa5f1575c970c0
 
 DEPENDS = "roscpp"
 
-SRC_URI = "git://github.com/ros/ros_tutorials.git"
+SRC_URI = "git://github.com/ros/ros_tutorials.git;branch=groovy-devel"
 
 SRCREV = "${AUTOREV}"
 PV = "1.0.0+gitr${SRCREV}"
