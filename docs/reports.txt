@@ -62,10 +62,11 @@ Week 4:
 =======
 What has been accomplished?:
     - More progress with tutorials.
-    - Cross-compilation ROS package example created.
+    - Cross-compilation ROS package example created (beginner_tutorials).
+    - 
 
  Issues:
-    -
+    - When trying to remove a package through opkg "opkg remove roscpp-tutorials*.ipkg". It says "No packages removed".
     
  Plans for the next week:
     - 

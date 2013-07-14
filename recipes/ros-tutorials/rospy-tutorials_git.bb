@@ -1,4 +1,4 @@
-DESCRIPTION = "Beginner_tutorials, talker/listener ROS package"
+DESCRIPTION = "rospy-tutorials, recipe for cross-compiling ROS package"
 SECTION = "devel"
 LICENSE = "MIT"
 LIC_FILES_CHKSUM = "file://package.xml;md5=aefb1cb30ddb164145ac0d90fdc34f61"
