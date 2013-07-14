@@ -1,44 +1,17 @@
-BEAGLE-ROS project
+Recipes:
 ==================
 
-Integration of the Robot Operative System (ROS) and the BeagleBone through the [meta-ros](https://github.com/bmwcarit/meta-ros) project, a layer for OpenEmbedded Linux.
+The following directories contain bitbake recipes for cross-compiling different ROS packages.
 
-This project is part of the Google Summer of Code (GSOC) 2013.
-The aim is to work in the integration of the Robot Operative System (ROS) and the BeagleBone. Both ROS and the BeagleBone are great tools and increasingly being used in robotics. Having both of them working together in a easy way would be a great asset. A lot of users show their interest for ARM ROS integration. Some made a couple of tutorials about how to install ROS on Ubuntu on the BeagleBoard however this documentation is getting a bit old fashioned and probably not the right way. There's also some code to use lightweight versions of ROS but again, roboticists might not be looking for a light-ROS device but a fully functional one.
+##Recipes list:
 
-##Description of the files:
+* beginner-tutorials: A simple talker/listerner ROS package written in python.([code](https://github.com/vmayoral/beginner_tutorials) [docs](https://github.com/vmayoral/beginner_tutorials/blob/master/README.md))
 
-* LICENSE: License of the code.
+* ros-tutorials: This package attempts to show the features of ROS step-by-step, including using messages, servers, parameters, etc.([code](https://github.com/ros/ros_tutorials) [docs](http://ros.org/wiki/ros_tutorials))
 
-* README.md: Readme document.
-
-* scripts: Scripts to automate processes.
-
-* docs: Documentation.
-
-* lib: Libraries used.
-
-* patches: Patches. 
-
-* recipes: OpenEmbedded recipes. These recipes should be used with the meta-ros code.
+* common-tutorials: common_tutorials: actionlib_tutorials | nodelet_tutorial_math | pluginlib_tutorials | turtle_actionlib .([code](https://github.com/ros/common_tutorials) [docs](http://www.ros.org/wiki/common_tutorials))
 
 
-
-
-USAGE
-=====
-##Getting roscore running
-
-* Get an Angstrom distribution following http://www.angstrom-distribution.org/building-angstrom.
-
-* Put the MLO, u-boot and FS in the SD card as explained in http://downloads.angstrom-distribution.org/demo/beaglebone/.
-
-* Install all the packages for ROS in Angstrom sourcing `scripts/install-ros-angstrom.sh`.
-
-* source `/usr/setup.bash`.
-
-* run `roscore`.
-    
 ##Installing the recipes
 The easiest way to install the recipes is to `git clone` the beagle-ros code directly into the Angstrom `sources/` directory and add the beagle-ros as a layer:
 * Edit `conf/bblayers.conf`
