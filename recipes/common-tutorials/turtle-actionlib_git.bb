@@ -1,7 +1,7 @@
-DESCRIPTION = "actionlib_tutorials, recipe for cross-compiling ROS package"
+DESCRIPTION = "turtle_actionlib, recipe for cross-compiling ROS package"
 SECTION = "devel"
 LICENSE = "MIT"
-LIC_FILES_CHKSUM = "file://package.xml;md5=5ddc79b852c682e8749cb298f8d98b8f"
+LIC_FILES_CHKSUM = "file://package.xml;md5=2ae5ecab1aa3baefe574ee44d91ec0b5"
 
 DEPENDS = "roscpp"
 
@@ -10,6 +10,6 @@ SRC_URI = "git://github.com/ros/common_tutorials.git;branch=hydro-devel"
 SRCREV = "${AUTOREV}"
 PV = "1.0.0+gitr${SRCREV}"
 
-S = "${WORKDIR}/git/actionlib_tutorials"
+S = "${WORKDIR}/git/turtle_actionlib"
 
 inherit catkin
