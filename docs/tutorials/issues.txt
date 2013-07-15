@@ -84,3 +84,12 @@ Tutorial 15. Using rosed to edit files in ROS
 Tutorial 16-19. Writing a Simple Publisher and Subscriber
 ==========
     - Completed. The code has been published at https://github.com/vmayoral/beginner_tutorials
+
+ros_tutorials:
+=============
+    - recipes for ros_tutorials have been created (http://ros.org/wiki/ros_tutorials). Check the beagle-ros "recipes" directory.
+    - turtlesim doesn't compile.
+
+common_tutorials:
+================
+    - same with the common_tutorials (http://www.ros.org/wiki/common_tutorials). The recipes don't compile.

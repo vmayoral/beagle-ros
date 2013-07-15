@@ -63,10 +63,15 @@ Week 4:
 What has been accomplished?:
     - More progress with tutorials.
     - Cross-compilation ROS package example created (beginner_tutorials).
-    - 
+    - Cross-compilation of ros_tutorials 
 
  Issues:
     - When trying to remove a package through opkg "opkg remove roscpp-tutorials*.ipkg". It says "No packages removed".
+    - ros_tutorials: turtlesim doesn't compile, there's an error that should be addressed.
+    - common_tutorials: same issue, there's an error when cross-compiling.
     
  Plans for the next week:
-    - 
+    - Address the issues with ros_tutorials and common_tutorials.
+    - Get started with the sensors interfacing. Since i still haven't received the Audio cape the IMU will be addressed first. It's necessary to set the
+    right connections (in this case through the I2C port) and check that the driver is working as expected.
+    - It has been released a new driver for the IMU to be used (MPU-9150). It might be interesting to integrate this new driver too (https://github.com/Pansenti/linux-mpu9150).
