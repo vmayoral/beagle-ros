@@ -5,11 +5,11 @@ The following directories contain bitbake recipes for cross-compiling different 
 
 ##Recipes list:
 
-* beginner-tutorials: A simple talker/listerner ROS package written in python. ([code](https://github.com/vmayoral/beginner_tutorials), [docs](https://github.com/vmayoral/beginner_tutorials/blob/master/README.md))
+* **beginner-tutorials**: A simple talker/listerner ROS package written in python. ([code](https://github.com/vmayoral/beginner_tutorials), [docs](https://github.com/vmayoral/beginner_tutorials/blob/master/README.md))
 
-* ros-tutorials: This package attempts to show the features of ROS step-by-step, including using messages, servers, parameters, etc. ([code](https://github.com/ros/ros_tutorials), [docs](http://ros.org/wiki/ros_tutorials))
+* **ros-tutorials**: This package attempts to show the features of ROS step-by-step, including using messages, servers, parameters, etc. ([code](https://github.com/ros/ros_tutorials), [docs](http://ros.org/wiki/ros_tutorials))
 
-* common-tutorials: common_tutorials: actionlib_tutorials | nodelet_tutorial_math | pluginlib_tutorials | turtle_actionlib. ([code](https://github.com/ros/common_tutorials), [docs](http://www.ros.org/wiki/common_tutorials))
+* **common-tutorials**: common_tutorials: actionlib_tutorials | nodelet_tutorial_math | pluginlib_tutorials | turtle_actionlib. ([code](https://github.com/ros/common_tutorials), [docs](http://www.ros.org/wiki/common_tutorials))
 
 
 ##Installing the recipes
