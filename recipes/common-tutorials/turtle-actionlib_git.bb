@@ -12,6 +12,15 @@ DEPENDS = "roscpp actionlib \
             std_msgs \
             turtlesim"
 
+RDEPENDS = "actionlib actionlib_msgs \
+            angles \
+            message_runtime \
+            rosconsole \
+            roscpp \
+            std_msgs \
+            turtlesim"
+
+
 SRC_URI = "git://github.com/ros/common_tutorials.git;branch=hydro-devel"
 
 SRCREV = "${AUTOREV}"
