@@ -1,17 +1,26 @@
-From ac74a62bba60a411278135a52a2cbef94d54c4b1 Mon Sep 17 00:00:00 2001
+From da792e8abb5957f78bd62ed1a06f572dac37ab52 Mon Sep 17 00:00:00 2001
 From: vmayoral <v.mayoralv@gmail.com>
 Date: Thu, 18 Jul 2013 10:24:00 +0200
 Subject: [PATCH] Modifications to Makefile-cross to cross compile using
  Angstrom
 
 ---
- Makefile-cross |    2 +-
- 1 file changed, 1 insertion(+), 1 deletion(-)
+ Makefile-cross |    6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
 
 diff --git a/Makefile-cross b/Makefile-cross
-index b95ef3e..cbc86e2 100644
+index b95ef3e..3721f1f 100644
 --- a/Makefile-cross
 +++ b/Makefile-cross
+@@ -5,7 +5,7 @@
+ ### cross-build defs ###
+ 
+ ifeq ($(strip $(OETMP)),)
+-	OETMP = $(HOME)/poky/build/tmp 
++	OETMP = /home/victor/Escritorio/GSOC/setup-scripts/build/tmp-angstrom_v2012_12-eglibc
+ endif
+ 
+ 
 @@ -13,7 +13,7 @@ TOOLDIR = $(OETMP)/sysroots/`uname -m`-linux/usr/bin
  STAGEDIR = ${OETMP}/sysroots/overo/usr
  
@@ -21,6 +30,15 @@ index b95ef3e..cbc86e2 100644
  CFLAGS = -Wall -fsingle-precision-constant
  
  # for hard-fp toolchains
+@@ -77,7 +77,7 @@ inv_mpu.o : $(EMPLDIR)/inv_mpu.c
+ 
+ 
+ install:
+-	scp -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no imu imucal root@192.168.10.112:/home/root
++	#scp -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no imu imucal root@192.168.10.112:/home/root
+ 
+ 
+ clean:
 -- 
 1.7.9.5
 
