@@ -1,0 +1,26 @@
+From ac74a62bba60a411278135a52a2cbef94d54c4b1 Mon Sep 17 00:00:00 2001
+From: vmayoral <v.mayoralv@gmail.com>
+Date: Thu, 18 Jul 2013 10:24:00 +0200
+Subject: [PATCH] Modifications to Makefile-cross to cross compile using
+ Angstrom
+
+---
+ Makefile-cross |    2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/Makefile-cross b/Makefile-cross
+index b95ef3e..cbc86e2 100644
+--- a/Makefile-cross
++++ b/Makefile-cross
+@@ -13,7 +13,7 @@ TOOLDIR = $(OETMP)/sysroots/`uname -m`-linux/usr/bin
+ STAGEDIR = ${OETMP}/sysroots/overo/usr
+ 
+ # for soft-fp toolchains
+-CC = ${TOOLDIR}/armv7a-vfp-neon-poky-linux-gnueabi/arm-poky-linux-gnueabi-gcc
++CC = ${TOOLDIR}/armv7a-vfp-neon-angstrom-linux-gnueabi/arm-angstrom-linux-gnueabi-gcc
+ CFLAGS = -Wall -fsingle-precision-constant
+ 
+ # for hard-fp toolchains
+-- 
+1.7.9.5
+
