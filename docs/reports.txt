@@ -83,8 +83,18 @@ What has been accomplished?:
     - opkg remove was just a matter of using the package name (instead of the file name).
     - ros-tutorials and ros-common recipes modified to  include all the necessary compile and runtime dependencies
     - diving-meta-ros repo created to introduce the necessary steps about how to create a bitbake recipe from a ROS package.xml (suggested by the BMW guys)
+    - mpu-9150 driver recipe created. The recipe cross-compiles the driver but there's a need to specify what/where to install.
+    - linux-mpu9150 compiled compiled both natively and using the cross-compiler.
+    - linux-mpu9150 driver seems to work fine.
 
  Issues:
-    - turtlesim and the common-tutorials packages don't cross-compile.
+    - turtlesim and the common-tutorials packages don't cross-compile. It seems these tutorials should be addressed with more calm since the solution isn't obvious.
+    - mpu-9150_git.bb recipe compiles the driver however it doesn't ship it (https://github.com/vmayoral/beagle-ros/blob/master/recipes/mpu-9150/mpu-9150_git.bb)
+    - the kernel module driver for the MPU-6050 doesn't work.
+
     
  Plans for the next week:
+    - Finish the diving-meta-ros repo, a repository created to ilustrate how-to write a bitbake recipe from a ros package (meta-ros guys consider it's necessary).
+    - Solve the IMU hardware issues.
+    - Start developing a node that publishes the information of the IMU.
+
