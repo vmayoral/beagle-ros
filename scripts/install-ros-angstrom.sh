@@ -2,9 +2,10 @@
 
 # Based on http://www.angstrom-distribution.org/repo/ - 06.09.2013
 
-# Update and upgrade first
-opkg update
-opkg upgrade
+
+## Update and upgrade first
+#opkg update
+#opkg upgrade
 
 # Necessary packages:
 opkg install python-core
@@ -90,21 +91,16 @@ opkg install python-catkin-pkg-dev
 opkg install rosbash rosbash-dev rosbash-dbg
 opkg install python-rosdep python-rosdep-dev python-rosdep-dbg
 
-# copy importlib
-#cp libs/importlib /usr/lib/python2.7/
-
-
 #ROS_ROOT is not set by sourcing the /usr/setup.sh
 #export ROS_ROOT="/usr/share/ros"
 
-
-# Install the chatter-sender
-opkg install chatter-msgs
-opkg install chatter-msgs-dev
-opkg install chatter-msgs-commonlisp
-opkg install chatter-receiver
-opkg install chatter-receiver-dev
-opkg install chatter-sender
-opkg install chatter-sender-dev
+## Install the chatter-sender
+#opkg install chatter-msgs
+#opkg install chatter-msgs-dev
+#opkg install chatter-msgs-commonlisp
+#opkg install chatter-receiver
+#opkg install chatter-receiver-dev
+#opkg install chatter-sender
+#opkg install chatter-sender-dev
 
 
