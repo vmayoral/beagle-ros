@@ -99,3 +99,15 @@ What has been accomplished?:
     - Start developing a node that publishes the information of the IMU.
 
 
+
+Week 6:
+=======
+What has been accomplished?:
+    - [diving-meta-ros](https://github.com/vmayoral/diving-meta-ros) repo. See issue [#110](https://github.com/bmwcarit/meta-ros/issues/110) in meta-ros.
+    - Adapt ros-tutorials recipes to the meta-ros policies. Issue [#124](https://github.com/bmwcarit/meta-ros/issues/124) in meta-ros. 
+
+Issues:
+    
+Plans for the next week:
+
+
