@@ -21,11 +21,4 @@ RDEPENDS = "actionlib actionlib_msgs \
             turtlesim"
 
 
-SRC_URI = "git://github.com/ros/common_tutorials.git;branch=hydro-devel"
-
-SRCREV = "${AUTOREV}"
-PV = "1.0.0+gitr${SRCREV}"
-
-S = "${WORKDIR}/git/turtle_actionlib"
-
-inherit catkin
+require common-tutorials.inc

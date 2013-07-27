@@ -6,11 +6,4 @@ LIC_FILES_CHKSUM = "file://package.xml;md5=e9a21ae1da6f704b4933741142a12769"
 DEPENDS = "roscpp nodelet std-msgs"
 RDEPENDS = "roscpp nodelet std-msgs"
 
-SRC_URI = "git://github.com/ros/common_tutorials.git;branch=hydro-devel"
-
-SRCREV = "${AUTOREV}"
-PV = "1.0.0+gitr${SRCREV}"
-
-S = "${WORKDIR}/git/nodelet_tutorial_math"
-
-inherit catkin
+require common-tutorials.inc
