@@ -1,4 +1,4 @@
-DESCRIPTION = "Bitbake recipe to cross-compile the Linux-MPU9150 driver"
+DESCRIPTION = "Bitbake recipe to cross-compile the Linux-MPU9150 driver (https://github.com/Pansenti/linux-mpu9150)"
 LICENSE = "MIT"
 DEPENDS = ""
 LIC_FILES_CHKSUM = "file://LICENSE;beginline=5;endline=5;md5=f2bd7dd4be639edf8691f886da4aca19"

@@ -6,4 +6,5 @@ LIC_FILES_CHKSUM = "file://package.xml;beginline=9;endline=9;md5=d566ef916e9dedc
 
 DEPENDS = "roscpp std-srvs qt4-embedded roslib geometry-msgs"
 
+inherit qt4x11
 require ros-tutorials.inc
