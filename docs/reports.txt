@@ -105,9 +105,16 @@ Week 6:
 What has been accomplished?:
     - [diving-meta-ros](https://github.com/vmayoral/diving-meta-ros) repo. See issue [#110](https://github.com/bmwcarit/meta-ros/issues/110) in meta-ros.
     - Adapt ros-tutorials recipes to the meta-ros policies. Issue [#124](https://github.com/bmwcarit/meta-ros/issues/124) in meta-ros. 
+    - push ros-tutorials recipes and common-tutorials recipes to meta-ros.
+    - MPU-9150 userspace code inspected and adapted to the rosnode.
+    - ros-mpu9150 repo created (https://github.com/vmayoral/ros-mpu9150). This repo will contain a ROS package that publishes the Invensense MPU-9150 data into a topic
 
 Issues:
+    - Turtlesim and some of the common-tutorials recipes don't cross-compile yet.
+    - Errors when compiling (headers and linking) ros-mpu9150 code through `catkin_make``. Need to be inspected.
     
 Plans for the next week:
+    - Keep working in the ros-mpu9150 code.
+    - Create a ros-bb-dc-motors repo that launches a ROS node which drives a DC Motor 
 
 
