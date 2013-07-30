@@ -118,3 +118,15 @@ Plans for the next week:
     - Create a ros-bb-dc-motors repo that launches a ROS node which drives a DC Motor 
 
 
+Week 7:
+=======
+What has been accomplished?:
+    - ros-mpu9150 coded. The code reuses the linux-mpu9150 userspace driver.
+    - ros_bb_dc_motors created.
+
+Issues:
+    - Issues when linking ros-mpu9150 code.
+    
+Plans for the next week:
+
+
