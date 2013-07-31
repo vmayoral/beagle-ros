@@ -7,13 +7,9 @@ SRC_URI = "git://github.com/vmayoral/linux-mpu9150.git \
             file://patch/0001-Modifications-to-Makefile-cross-to-cross-compile-usi.patch"
 
 # Package Revision, Update this whenever you change the recipe.
-PR = "r0"  
 SRCREV = "${AUTOREV}"
 
-
 S = "${WORKDIR}/git"
-
-inherit autotools
 
 do_configure () {
     export OETMP="/home/victor/Escritorio/GSOC/setup-scripts/build/tmp-angstrom_v2012_12-eglibc"
@@ -21,6 +17,10 @@ do_configure () {
 }
 
 do_compile () {
-  make
+#    make 
+    oe_runmake
 }
 
+do_install () {
+     DESTDIR=${D}
+}
