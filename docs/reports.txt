@@ -127,9 +127,9 @@ What has been accomplished?:
 
 Issues:
     - Issues when linking ros-mpu9150 code. Fixed.
-    - Issues when cross-compiling the linux-mpu9150 through a bitbake recipe. Although the code seems to compile nothing ships. Also the work directory seems to be empty.
+    - Issues when cross-compiling the linux-mpu9150 through a bitbake recipe. Although the code seems to compile nothing ships. Also the work directory seems to be empty. Fixed.
+    - ros-mpu9150 doesn't seem to publish in the Topic assigned. Fixed.
     - ros-mpu9150 node doesn't stop when "Ctrl+C" is used. Has to be manually killed.
-    - ros-mpu9150 doesn't seem to publish in the Topic assigned.
     
 Plans for the next week:
 
