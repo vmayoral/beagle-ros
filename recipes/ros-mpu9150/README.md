@@ -15,4 +15,4 @@ The recipe ships the following files:
 
 * **magcal.txt**: The magnetometer calibration file.
 
-* **linux-mpu9150**: The userspace driver of the MPU9150 code. The source can be compiled using the instructions provided at the README file.
+* **linux-mpu9150** (directory): The userspace driver of the MPU9150 code. The source can be compiled using the instructions provided at the README file.
