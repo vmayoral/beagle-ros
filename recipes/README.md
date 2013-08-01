@@ -13,7 +13,9 @@ The following directories contain bitbake recipes for cross-compiling different 
 
 ----
 
-* **mpu-9150**: recipe to cross-compile the Invensense MPU-9150 driver. ([code](https://github.com/Pansenti/linux-mpu9150))
+* **linux-mpu9150**: recipe to cross-compile the Invensense MPU-9150 driver. ([code](https://github.com/Pansenti/linux-mpu9150))
+
+* **ros-mpu9150**: recipe to cross-compile a ROS package that publishes the Invensense MPU-9150 data into a ROS Topic. ([code](https://github.com/vmayoral/ros-mpu9150))
 
 ##Installing the recipes
 The easiest way to install the recipes is to `git clone` the beagle-ros code directly into the Angstrom `sources/` directory and add the beagle-ros as a layer:
