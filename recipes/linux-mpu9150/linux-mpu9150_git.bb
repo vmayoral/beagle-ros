@@ -22,5 +22,7 @@ do_compile () {
 }
 
 do_install () {
-     DESTDIR=${D}
+     install -d ${D}${bindir}
+     install -m 0755 imu ${D}${bindir}
+     install -m 0755 imucal ${D}${bindir}
 }
