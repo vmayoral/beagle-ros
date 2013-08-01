@@ -8,20 +8,19 @@ The aim is to work in the integration of the Robot Operative System (ROS) and th
 
 ##Description of the files:
 
-* LICENSE: License of the code.
+* **LICENSE**: License of the code.
 
-* README.md: Readme document.
+* **README.md**: This document.
 
-* scripts: Scripts to automate processes.
+* **scripts**: Scripts to automate processes.
 
-* docs: Documentation.
+* **docs**: Documentation.
 
-* lib: Libraries used.
+* **lib**: Libraries used.
 
-* patches: Patches. 
+* **patches**: Patches. 
 
-* recipes: OpenEmbedded recipes. These recipes should be used with the meta-ros code.
-
+* **recipes**: OpenEmbedded recipes. These recipes should be used with the meta-ros code.
 
 
 
@@ -39,8 +38,13 @@ USAGE
 
 * run `roscore`.
     
+##First steps
+Getting started with Angstrom (or OpenEmbedded) and bitbake might be a bit tough at the beggining but it gets better and after a while you will love it, promised ;).
+
+Beagle-ROS makes use of the meta-ros project, an OpenEmbedded layer that provides ROS to embedded devices. In order to get comfortable with meta-ros the [diving-meta-ros](https://github.com/vmayoral/diving-meta-ros) repo aims to give you some aid with the first steps (take into account that this tutorial assumes that you are already comfortable with ROS. If not take a look at their [tutorials](http://www.ros.org/wiki/ROS/Tutorials)).
+    
 ##Installing the recipes
-The easiest way to install the recipes is to `git clone` the beagle-ros code directly into the Angstrom `sources/` directory and add the beagle-ros as a layer:
+The easiest way to install the bitbake recipes provided is to `git clone` the beagle-ros code directly into the Angstrom `sources/` directory and add the beagle-ros as a layer:
 * Edit `conf/bblayers.conf`
 * add `${TOPDIR}/sources/beagle-ros \` to the `BASELAYERS` variable
 
