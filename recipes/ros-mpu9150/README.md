@@ -16,3 +16,22 @@ The recipe ships the following files:
 * **magcal.txt**: The magnetometer calibration file.
 
 * **linux-mpu9150** (directory): The userspace driver of the MPU9150 code. The source can be compiled using the instructions provided at the README file.
+
+##Usage:
+
+```
+Usage: ./mpu9150_node [options]                                                 
+  -b <i2c-bus>          The I2C bus number where the IMU is. The default is 1 t.
+  -s <sample-rate>      The IMU sample rate in Hz. Range 2-50, default 10.      
+  -y <yaw-mix-factor>   Effect of mag yaw on fused yaw data.                    
+                           0 = gyro only                                        
+                           1 = mag only                                         
+                           > 1 scaled mag adjustment of gyro data               
+                           The default is 4.                                    
+  -a <accelcal file>    Path to accelerometer calibration file. Default is ./act
+  -m <magcal file>      Path to mag calibration file. Default is ./magcal.txt   
+  -v                    Verbose messages                                        
+  -h                    Show this help                                          
+                                                                                
+Example: ./mpu9150_node -b3 -s20 -y10                      
+```
