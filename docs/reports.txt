@@ -124,12 +124,17 @@ What has been accomplished?:
     - ros-mpu9150 coded. The code reuses the linux-mpu9150 userspace driver.
     - ros_bb_dc_motors created.
     - ros-mpu9150 node works in the BB.
-
-Issues:
     - Issues when linking ros-mpu9150 code. Fixed.
     - Issues when cross-compiling the linux-mpu9150 through a bitbake recipe. Although the code seems to compile nothing ships. Also the work directory seems to be empty. Fixed.
     - ros-mpu9150 doesn't seem to publish in the Topic assigned. Fixed.
+    - [adafruit-beaglebone-io-python](https://github.com/adafruit/adafruit-beaglebone-io-python) tested and installed. It works fine and the ROS package to control the motors will probably be developed using this library.
+
+
+Issues:
     - ros-mpu9150 node doesn't stop when "Ctrl+C" is used. Has to be manually killed.
+    - rqt_graph against the core (Issue #130). Seems to be fixed but it might be better to keep this thing in mind.
+    - ROS Topics not readable outside the machine (Issue #134)
+
     
 Plans for the next week:
 

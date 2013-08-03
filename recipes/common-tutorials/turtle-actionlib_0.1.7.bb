@@ -1,6 +1,6 @@
 DESCRIPTION = "turtle_actionlib, recipe for cross-compiling ROS package"
 SECTION = "devel"
-LICENSE = "MIT"
+LICENSE = "BSD"
 LIC_FILES_CHKSUM = "file://package.xml;md5=2ae5ecab1aa3baefe574ee44d91ec0b5"
 
 DEPENDS = "roscpp actionlib \
