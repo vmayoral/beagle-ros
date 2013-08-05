@@ -140,3 +140,17 @@ Plans for the next week:
     - Explore the communication between the mpu9150_node already created and the new one to control the DC motors.
 
 
+Week 8:
+=======
+What has been accomplished?:
+
+Issues:
+    - ros-mpu9150 node doesn't stop when "Ctrl+C" is used. Has to be manually killed.
+    - rqt_graph against the core (Issue #130). Seems to be fixed but it might be better to keep this thing in mind.
+    - ROS Topics not readable outside the machine (Issue #134)
+    - opkg upgrade issue (When i try to upgrade the packages in my BB using "opkg upgrade" (after having updated the sources) i get nothing. The program finishes without outputing anything.
+
+    
+Plans for the next week:
+
+
