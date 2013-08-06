@@ -35,7 +35,7 @@ USAGE
 
 * Put the MLO, u-boot and FS in the SD card as explained in http://downloads.angstrom-distribution.org/demo/beaglebone/.
 
-* Install all the packages for ROS in Angstrom sourcing `scripts/install-ros-angstrom.sh`.
+* Install all the packages for ROS in Angstrom sourcing `scripts/minimal-ros-install-angstrom.sh`.
 
 * source `/usr/setup.bash`.
 
