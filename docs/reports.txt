@@ -143,12 +143,17 @@ Plans for the next week:
 Week 8:
 =======
 What has been accomplished?:
+    - Minor detail with .bashrc and .bash_profile in Angstrom. In order to use them it's needed to:
+        1. modify /etc/passwd to run root with a bash shell (instead of sh)
+        2. create .bash_profile and source .bashrc inside of it.
+        3. create .bashrc with whatever is needed
+    - opkg upgrade issue (When i try to upgrade the packages in my BB using "opkg upgrade" (after having updated the sources) i get nothing. The program finishes without outputing anything. Fixed. Changed /etc/opkg files to point to the "eu" preffix URLs.
 
 Issues:
     - ros-mpu9150 node doesn't stop when "Ctrl+C" is used. Has to be manually killed.
     - rqt_graph against the core (Issue #130). Seems to be fixed but it might be better to keep this thing in mind.
     - ROS Topics not readable outside the machine (Issue #134)
-    - opkg upgrade issue (When i try to upgrade the packages in my BB using "opkg upgrade" (after having updated the sources) i get nothing. The program finishes without outputing anything.
+    - When upgrading a set of packages through "opkg upgrade <whatever>", after a while, the BB looses connection. I believe this is because the file /etc/resolv.conf gets overwritten by the Connection Manager.
 
     
 Plans for the next week:
