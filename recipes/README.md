@@ -11,11 +11,11 @@ The following directories contain bitbake recipes for cross-compiling different 
 
 * **common-tutorials**: common_tutorials: actionlib_tutorials | nodelet_tutorial_math | pluginlib_tutorials | turtle_actionlib. ([code](https://github.com/ros/common_tutorials), [docs](http://www.ros.org/wiki/common_tutorials))
 
-----
-
 * **linux-mpu9150**: recipe to cross-compile the Invensense MPU-9150 driver. ([code](https://github.com/Pansenti/linux-mpu9150))
 
 * **ros-mpu9150**: recipe to cross-compile a ROS package that publishes the Invensense MPU-9150 data into a ROS Topic. ([code](https://github.com/vmayoral/ros-mpu9150))
+
+* **ros-bb-dc-motors**: recipe to cross-compile a ROS package that activates a DC motor on the BB using the adafruit's library. ([code](https://github.com/vmayoral/ros_bb_dc_motors))
 
 ##Installing the recipes
 The easiest way to install the recipes is to `git clone` the beagle-ros code directly into the Angstrom `sources/` directory and add the beagle-ros as a layer:
