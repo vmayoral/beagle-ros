@@ -21,7 +21,7 @@ A lot of users show their interest for ARM ROS integration. Some made a couple o
 
 * **lib**: Libraries used.
 
-* **patches**: Patches. 
+* **ipks**: Cross-compiled packages neccesary to install meta-ros version 0.1 in the BeagleBone. 
 
 * **recipes**: OpenEmbedded recipes. These recipes should be used with the meta-ros code.
 
@@ -35,7 +35,7 @@ USAGE
 
 * Put the MLO, u-boot and FS in the SD card as explained in http://downloads.angstrom-distribution.org/demo/beaglebone/.
 
-* Install all the packages for ROS in Angstrom sourcing `scripts/minimal-ros-install-angstrom.sh`.
+* Install all the packages for ROS in Angstrom sourcing `scripts/minimal-ros-install-angstrom.sh` (although it's not recommended you can also install ROS in the BeagleBone using the packages stored in the *ipks* directory throught the script `scripts/fixed-ros-install-angstrom.sh`).
 
 * source `/usr/setup.bash`.
 
