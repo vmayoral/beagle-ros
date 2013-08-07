@@ -150,6 +150,8 @@ What has been accomplished?:
     - opkg upgrade issue (When i try to upgrade the packages in my BB using "opkg upgrade" (after having updated the sources) i get nothing. The program finishes without outputing anything. Fixed. Changed /etc/opkg files to point to the "eu" preffix URLs.
     - Necessary to source rosbash so that roscd, rosls and so on are available (/usr/share/rosbash/rosbash)
     - ROS updated to hydro.
+    - ros_bb_dc_motors ROS package finished.
+    - Working example with ros_mpu91950 and ros_bb_dc_motors ROS packages. Video uploaded showing how a PWM signal is modified with the IMU.
 
 
 Issues:
@@ -160,5 +162,6 @@ Issues:
     - when updating to the new meta-ros hydro version, "python-netifaces" dependency can't be satisfied. It should be uploaded to the Angstrom repositories.
     
 Plans for the next week:
+    - Put all the cross-compiled packages in the repo and create a script that installs ROS from those fixed packages.
 
 
