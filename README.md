@@ -25,6 +25,8 @@ A lot of users show their interest for ARM ROS integration. Some made a couple o
 
 * **recipes**: OpenEmbedded recipes. These recipes should be used with the meta-ros code.
 
+* **conf**: OpenEmbedded configuration directory. This directory is added so that the beagle-ros project can be directly added as a layer in Angstrom/OpenEmbedded systems.
+
 
 
 USAGE
