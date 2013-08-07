@@ -20,7 +20,7 @@ The following directories contain bitbake recipes for cross-compiling different 
 * **bb-sharp-IR**: recipe to cross-compile a ROS package that created a node that harvest the data from the Sharp IR GP2Y0A21YK0F sensor and publishes it to a topic. ([code](https://github.com/vmayoral/bb_sharp_IR))
 
 -------
-[**These packages are deprecated**]
+[ **These recipes are deprecated** ]
 
 * **ros-mpu9150**: recipe to cross-compile a ROS package that publishes the Invensense MPU-9150 data into a ROS Topic. ([code](https://github.com/vmayoral/ros-mpu9150))
 
