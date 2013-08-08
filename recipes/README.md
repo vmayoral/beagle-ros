@@ -26,6 +26,9 @@ The following directories contain bitbake recipes for cross-compiling different 
 
 * **ros-bb-dc-motors**: recipe to cross-compile a ROS package that activates a DC motor on the BB using the adafruit's library. ([code](https://github.com/vmayoral/ros_bb_dc_motors))
 
+------
+[ **The rest of the recipes are considered a work in progress** ]
+
 ##Installing the recipes
 The easiest way to install the recipes is to `git clone` the beagle-ros code directly into the Angstrom `sources/` directory and add the beagle-ros as a layer:
 * Edit `conf/bblayers.conf`
