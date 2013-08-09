@@ -151,10 +151,11 @@ What has been accomplished?:
     - Necessary to source rosbash so that roscd, rosls and so on are available (/usr/share/rosbash/rosbash)
     - ROS updated to hydro.
     - ros_bb_dc_motors ROS package finished.
-    - Working example with ros_mpu91950 and ros_bb_dc_motors ROS packages. Video uploaded showing how a PWM signal is modified with the IMU.
+    - Working example with ros_mpu9150 and ros_bb_dc_motors ROS packages. Video uploaded showing how a PWM signal is modified with the IMU.
     - Sharp IR sensor interfaced.
     - All the cross-compiled packages in the repo and create a script that installs ROS from those fixed packages.
 
+    - Sharp IR sensor ROS package. 
 
 Issues:
     - ros-mpu9150 node doesn't stop when "Ctrl+C" is used. Has to be manually killed.
@@ -162,11 +163,11 @@ Issues:
     - ROS Topics not readable outside the machine (Issue #134)
     - When upgrading a set of packages through "opkg upgrade <whatever>", after a while, the BB looses connection. I believe this is because the file /etc/resolv.conf gets overwritten by the Connection Manager.
     - when updating to the new meta-ros hydro version, "python-netifaces" dependency can't be satisfied. It should be uploaded to the Angstrom repositories.
-    - control-toolbox crosscompiling recipe Error: 1 out of 1 hunk FAILED -- rejects in file CMakeLists.txt
     
 Plans for the next week:
-    - Sharp IR sensor ROS package. (WIP)
-    - ros_control recipes.
+    - ros_controls (cmake-modules, control-msg, ros-control, ros-controllers, tinyxml, ...) recipes created.
+    - document the ROS packages created according to the ROS documentations conventions.
+   
 
 
 

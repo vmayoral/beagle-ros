@@ -17,7 +17,7 @@ The following directories contain bitbake recipes for cross-compiling different 
 
 * **bb-dc-motors**: recipe to cross-compile a ROS package that activates a DC motor on the BB using the adafruit's library. ([code](https://github.com/vmayoral/bb_dc_motors))
 
-* **bb-sharp-IR**: recipe to cross-compile a ROS package that created a node that harvest the data from the Sharp IR GP2Y0A21YK0F sensor and publishes it to a topic. ([code](https://github.com/vmayoral/bb_sharp_IR))
+* **bb-sharp-ir**: recipe to cross-compile a ROS package that created a node that harvest the data from the Sharp IR GP2Y0A21YK0F sensor and publishes it to a topic. ([code](https://github.com/vmayoral/bb_sharp_ir))
 
 -------
 [ **These recipes are deprecated** ]
