@@ -7,3 +7,5 @@ DEPENDS = "curl rosconsole roslib"
 
 require robot-model.inc
 
+SRC_URI += "file://0001-resource_retriever-test-CMakeLists.txt-fix.patch;striplevel=2"
+
