@@ -1,4 +1,4 @@
-DESCRIPTION = " This package contains a C++ parser for the Collada robot description format. The parser reads a Collada XML robot description, and creates a C++ URDF model. Although it is possible to directly use this parser when working with Collada robot descriptions, the preferred user API is found in the urdf package.
+DESCRIPTION = " This package contains a C++ parser for the Collada robot description format. The parser reads a Collada XML robot description, and creates a C++ URDF model. Although it is possible to directly use this parser when working with Collada robot descriptions, the preferred user API is found in the urdf package."
 
 SECTION = "devel"
 LICENSE = "BSD"
