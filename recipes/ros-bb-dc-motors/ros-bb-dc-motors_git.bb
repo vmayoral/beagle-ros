@@ -8,7 +8,6 @@ DEPENDS = "rospy std-msgs"
 SRC_URI = "git://github.com/vmayoral/ros_bb_dc_motors.git"
 
 SRCREV = "${AUTOREV}"
-PV = "1.0.0+gitr${SRCPV}"
 
 S = "${WORKDIR}/git"
 

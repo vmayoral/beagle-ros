@@ -9,7 +9,6 @@ DEPENDS = "roscpp rospy std-msgs"
 SRC_URI = "git://github.com/vmayoral/ros-mpu9150"
 
 SRCREV = "${AUTOREV}"
-PV = "1.0.0+gitr${SRCPV}"
 
 S = "${WORKDIR}/git"
 
