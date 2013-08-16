@@ -173,7 +173,9 @@ Plans for the next week:
 Week 9:
 =======
 What has been accomplished?:
-    - 
+    - New scripts added to the scripts/ directory.
+    - code the bb_altimeter ROS package (MPL3115A2 sensor)
+
 
 Issues:
     - Script to test the registers of the MPL3115A2 created. The script works with the other sensors connected to the I2C bus but not with the MPL sensor. i2ctools give the correct value thought. A python script that uses i2ctools is being created.
@@ -181,7 +183,7 @@ Issues:
 
     
 Plans for the next week:
-    - code the bb_altimeter ROS package (MPL3115A2 sensor)
+
     - document the ROS packages created according to the ROS documentations conventions.
     - continue with the ros_controls recipes.
    
