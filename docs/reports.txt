@@ -173,6 +173,7 @@ Plans for the next week:
 Week 9:
 =======
 What has been accomplished?:
+    - 
 
 Issues:
     - Script to test the registers of the MPL3115A2 created. The script works with the other sensors connected to the I2C bus but not with the MPL sensor. i2ctools give the correct value thought. A python script that uses i2ctools is being created.

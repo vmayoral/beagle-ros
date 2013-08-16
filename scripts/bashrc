@@ -1,0 +1,13 @@
+#source /usr/setup.bash
+
+export ROS_WORKSPACE=/usr
+export ROS_ROOT=/usr/share/ros
+#export ROS_MASTER_URI=http://0.0.0.0:11311
+export ROS_MASTER_URI=http://beaglebone:11311
+export CMAKE_PREFIX_PATH=/usr
+export ROS_DISTRO="hydro"
+export ROS_PACKAGE_PATH="/home/root/catkin_ws/src:/usr/share"
+
+# source rosbash
+source /usr/share/rosbash/rosbash
+
