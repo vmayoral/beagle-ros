@@ -3,6 +3,14 @@ Recipes:
 
 The following directories contain bitbake recipes for cross-compiling different ROS packages.
 
+##Summary:
+
+| Recipe        | Status        |
+|:-------------:| ------------- |
+| beginner-tutorials| Ok|
+| ros-tutorials | Turtlesim still missing. |
+| common-tutorials | actionlib-tutorials and turtlesim-tutorials missing. |
+
 ##Recipes list:
 
 * **beginner-tutorials**: A simple talker/listerner ROS package written in python. ([code](https://github.com/vmayoral/beginner_tutorials), [docs](https://github.com/vmayoral/beginner_tutorials/blob/master/README.md))
@@ -21,15 +29,30 @@ The following directories contain bitbake recipes for cross-compiling different 
 
 * **bb-altimeter**: recipe to cross-compile a bb_altimeter ROS package which publishes to altimeter MPL3115A2 values into a topic. ([code](https://github.com/vmayoral/bb_altimeter))
 
+* **cmake-modules**: A common repository for CMake Modules which are not distributed with CMake but are commonly used by ROS packages. ([code](https://github.com/ros/cmake_modules))
+
+* **control-msgs**: control_msgs contains base messages and actions useful for controlling robots.  It provides representations for controller setpoints and joint and cartesian trajectories. ([code](https://github.com/ros-controls/control_msgs.git))
+
+* **ros-**: . ([code]())
+
+* **ros-**: . ([code]())
+
+* **ros-**: . ([code]())
+
+* **ros-**: . ([code]())
+
 -------
-[ **These recipes are deprecated** ]
+### Deprecated:
 
 * **ros-mpu9150**: recipe to cross-compile a ROS package that publishes the Invensense MPU-9150 data into a ROS Topic. ([code](https://github.com/vmayoral/ros-mpu9150))
 
 * **ros-bb-dc-motors**: recipe to cross-compile a ROS package that activates a DC motor on the BB using the adafruit's library. ([code](https://github.com/vmayoral/ros_bb_dc_motors))
 
 ------
-[ **The rest of the recipes are considered a work in progress** ]
+
+
+
+
 
 ##Installing the recipes
 The easiest way to install the recipes is to `git clone` the beagle-ros code directly into the Angstrom `sources/` directory and add the beagle-ros as a layer:
