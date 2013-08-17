@@ -5,11 +5,31 @@ The following directories contain bitbake recipes for cross-compiling different 
 
 ##Summary:
 
-| Recipe        | Status        |
-|:-------------:| ------------- |
-| beginner-tutorials| Ok|
-| ros-tutorials | Turtlesim still missing. |
-| common-tutorials | actionlib-tutorials and turtlesim-tutorials missing. |
+| Recipe        | Status (cross-compilation)       | Test (BeagleBone) |
+|:-------------:| ------------- | ------------ |
+| beginner-tutorials| Ok| Ok |
+| ros-tutorials | Turtlesim doesn't cross-compile. | Ok |
+| common-tutorials | actionlib-tutorials and turtlesim-tutorials doesn't cross-compile. | Ok |
+| linux-mpu9150 | Ok| Ok |
+| bb-mpu9150 | Ok| Ok |
+| bb-dc-motors | Ok| Ok |
+| bb-sharp-ir | Ok| Ok |
+| bb-altimeter | Ok| Code seems to work but there're some issues with the sensor data |
+| cmake-modules | Ok| |
+| control-msgs | Ok| |
+| control-toolbox | Ok| |
+| realtime-tools | Ok| |
+| robot-model | WIP | |
+| rosconsole-bridge | Ok| |
+| ros-control | Ok| |
+| ros-controllers | WIP | |
+| tinyxml | Ok| |
+| urdfdom | problems when inherit cmake. | |
+| urdfdom-headers | Ok| |
+| ros-mpu9150 | Ok| Ok. **Deprecated**|
+| ros-bb-dc-motors | Ok| Ok. **Deprecated**|
+
+*WIP: Work In Progress*
 
 ##Recipes list:
 
@@ -33,13 +53,23 @@ The following directories contain bitbake recipes for cross-compiling different 
 
 * **control-msgs**: control_msgs contains base messages and actions useful for controlling robots.  It provides representations for controller setpoints and joint and cartesian trajectories. ([code](https://github.com/ros-controls/control_msgs.git))
 
-* **ros-**: . ([code]())
+* **control-toolbox**: The control toolbox contains modules that are useful across all controllers. ([code](https://github.com/ros-controls/control_toolbox/))
 
-* **ros-**: . ([code]())
+* **realtime-tools**:This package contains a set of tools that can be used from a hard realtime thread, without breaking the realtime behavior.  The tools currently only provides the realtime publisher, which makes it possible to publish messages to a ROS topic from a realtime thread. ([code](https://github.com/ros-controls/realtime_tools))
 
-* **ros-**: . ([code]())
+* **robot-model**: robot_model contains packages for modeling various aspects of robot information, specified in the Xml Robot Description Format (URDF). The core package of this stack is urdf, which parses URDF files, and constructs an object model (C++) of the robot. ([code](https://github.com/ros/robot_model.git))
 
-* **ros-**: . ([code]())
+* **rosconsole-bridge**: rosconsole_bridge is a package used in conjunction with console_bridge and rosconsole for connecting console_bridge-based logging to rosconsole-based logging. ([code](https://github.com/ros/rosconsole_bridge))
+
+* **ros-control**: A set of packages that include controller interfaces, controller managers, transmissions, hardware_interfaces and the control_toolbox. ([code](https://github.com/ros-controls/ros_control.git))
+
+* **ros-controller**: Library of ros controllers. ([code](https://github.com/ros-controls/ros_controllers.git))
+
+* **tinyxml**: TinyXML is a simple, small, C++ XML parser that can be easily integrated into other programs.([code](git://github.com/vmayoral/tinyxml.git))
+
+* **urdfdom**: The URDF (U-Robot Description Format) library provides core data structures and a simple XML parsers for populating the class data structures from an URDF file. ([code](https://github.com/ros/urdfdom/))
+
+* **urdfdom-headers**: The URDF (U-Robot Description Format) headers provides core data structure headers for URDF. ([code](https://github.com/ros/urdfdom_headers))
 
 -------
 ### Deprecated:

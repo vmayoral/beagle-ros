@@ -11,4 +11,5 @@ SRC_URI[sha256sum] = "a918d3ae4366504a93d6af780ac1e706cdffad4b621a363a9bd53c5fbf
 
 S = "${WORKDIR}/urdfdom-${PV}"
 
+inherit cmake
 #inherit catkin
