@@ -42,7 +42,7 @@ USAGE
 
 * Install all the packages for ROS in Angstrom sourcing `scripts/minimal-ros-install-angstrom.sh` (although it's not recommended you can also install ROS in the BeagleBone using the packages stored in the *ipks* directory throught the script `scripts/fixed-ros-install-angstrom.sh`).
 
-* source `/usr/setup.bash`.
+* ~~source `/usr/setup.bash`~~. Updates in the ROS recipes doesn't install scripts in the `/usr/` directory anymore. To configure the enviroment properly check this [bashrc](https://github.com/vmayoral/beagle-ros/blob/master/scripts/bashrc) file.
 
 * run `roscore`.
     
