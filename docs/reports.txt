@@ -154,7 +154,7 @@ What has been accomplished?:
     - Working example with ros_mpu9150 and ros_bb_dc_motors ROS packages. Video uploaded showing how a PWM signal is modified with the IMU.
     - Sharp IR sensor interfaced.
     - All the cross-compiled packages in the repo and create a script that installs ROS from those fixed packages.
-    - Sharp IR sensor ROS package (bb_altimeter). 
+    - Sharp IR sensor ROS package. 
     - ROS Topics not readable outside the machine (Issue #134)
     - rqt_graph against the core (Issue #130). Seems to be fixed but it might be better to keep this thing in mind. Fixed
     - ros_controls (cmake-modules, control-msg, ros-control, ros-controllers, tinyxml, ...) recipes created.
@@ -175,17 +175,16 @@ Week 9:
 What has been accomplished?:
     - New scripts added to the scripts/ directory.
     - code the bb_altimeter ROS package (MPL3115A2 sensor)
-
+    - recipes documented at https://github.com/vmayoral/beagle-ros/blob/master/recipes/README.md
 
 Issues:
-    - Script to test the registers of the MPL3115A2 created. The script works with the other sensors connected to the I2C bus but not with the MPL sensor. i2ctools give the correct value thought. A python script that uses i2ctools is being created.
-    - boost compiling issues.
-
+    - This [script](https://github.com/vmayoral/bb_altimeter/blob/master/tests/register_test.py) works with the MPU9150 connected to the I2C-1 bus but not with the MPL sensor connected to the same bus. i2ctools give the correct value thought. A [python script](https://github.com/vmayoral/bb_altimeter/blob/master/scripts/i2ctools_python.py) that uses i2ctools has been created to address this issue.
+    - urdfdom (ros_control) compiling issues when `inherit cmake`.
     
 Plans for the next week:
-
-    - document the ROS packages created according to the ROS documentations conventions.
+    - Add more IR sensors to the bb_sharp_ir ROS package (GP2Y0D810Z0F and GP2Y0D805Z0F).
     - continue with the ros_controls recipes.
+    - document the ROS packages created according to the ROS documentations conventions.
    
 
 
