@@ -189,3 +189,20 @@ Plans for the next week:
 
 
 
+Week 10:
+=======
+What has been accomplished?:
+    - Add more IR sensors to the bb_sharp_ir ROS package (GP2Y0D810Z0F and GP2Y0D805Z0F).
+
+Issues:
+    - urdfdom (ros_control) compiling issues when `inherit cmake`.
+    - new bb_sharp_ir scripts remain untested until i receive the soldered sensor.
+    - when using the [i2ctools_python](https://github.com/vmayoral/bb_battery/blob/master/scripts/i2ctools_python.py) class created with the PMIC, writing to a register is not possible (register remain unchanged).
+    
+Plans for the next week:
+    - continue with the ros_controls recipes.
+    - document the ROS packages created according to the ROS documentations conventions.
+   
+
+
+

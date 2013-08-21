@@ -11,6 +11,11 @@ The aim is to work in the integration of the Robot Operative System (ROS) and th
 
 A lot of users show their interest for ARM ROS integration. Some made a couple of tutorials about how to install ROS on Ubuntu on the BeagleBoard however this documentation is getting a bit old fashioned and probably not the right way. There's also some code to use lightweight versions of ROS but again, roboticists might not be looking for a light-ROS device but a fully functional one.
 
+--------
+
+It's highly recommended to have the last version of Angstrom.
+
+--------
 
 ##Description of the files:
 
