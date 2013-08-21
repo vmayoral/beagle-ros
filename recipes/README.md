@@ -30,7 +30,8 @@ The following directories contain bitbake recipes for cross-compiling different 
 | ros-bb-dc-motors | Ok| Ok. **Deprecated**|
 
 *WIP: Work In Progress*
-**Packages out of the scope of the GSOC**
+
+**(bold): Packages out of the scope of the GSOC**
 
 
 ##Recipes list:
