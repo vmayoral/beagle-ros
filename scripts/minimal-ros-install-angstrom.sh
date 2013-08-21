@@ -41,3 +41,8 @@ opkg install python-rosdep
 opkg install python-rospkg
 opkg install python-catkin-pkg
 opkg install python-rosinstall
+
+echo "Setting up the environment..."
+cat passwd > /etc/passwd
+echo "source .bashrc" >> ~/.bash_profile
+cat bashrc >> ~/.bashrc
