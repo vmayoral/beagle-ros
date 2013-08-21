@@ -29,8 +29,6 @@ It's highly recommended to have the last version of Angstrom.
 
 * **lib**: Libraries used.
 
-* **ipks**: Cross-compiled packages neccesary to install meta-ros version 0.1 in the BeagleBone. 
-
 * **recipes**: OpenEmbedded recipes. These recipes should be used with the meta-ros code.
 
 * **conf**: OpenEmbedded configuration directory. This directory is added so that the beagle-ros project can be directly added as a layer in Angstrom/OpenEmbedded systems.
@@ -56,8 +54,6 @@ USAGE
  cd beagle-ros/scripts
  source minimal-ros-install-angstrom.sh
  ```
-
- (although it's not recommended you can also install ROS in the BeagleBone using the packages stored in the *ipks* directory throught the script `scripts/fixed-ros-install-angstrom.sh`).
 
 * ~~source `/usr/setup.bash`. Updates in the ROS recipes doesn't install scripts in the `/usr/` directory anymore. To configure the enviroment properly check this [bashrc](https://github.com/vmayoral/beagle-ros/blob/master/scripts/bashrc) file.~~
 
