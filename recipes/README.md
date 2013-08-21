@@ -15,21 +15,23 @@ The following directories contain bitbake recipes for cross-compiling different 
 | bb-dc-motors | Ok| Ok |
 | bb-sharp-ir | Ok| GP2Y0D810Z0F and GP2Y0D805Z0F remain untested.|
 | bb-altimeter | Ok| Code seems to work but there're some issues with the sensor data |
-| cmake-modules | Ok| |
-| control-msgs | Ok| |
-| control-toolbox | Ok| |
-| realtime-tools | Ok| |
-| robot-model | WIP | |
-| rosconsole-bridge | Ok| |
-| ros-control | Ok| |
-| ros-controllers | WIP | |
-| tinyxml | Ok| |
-| urdfdom | problems when inherit cmake. | |
-| urdfdom-headers | Ok| |
+| **cmake-modules** | Ok| |
+| **control-msgs** | Ok| |
+| **control-toolbox** | Ok| |
+| **realtime-tools** | Ok| |
+| **robot-model** | WIP | |
+| **rosconsole-bridge** | Ok| |
+| **ros-control** | Ok| |
+| **ros-controllers** | WIP | |
+| **tinyxml** | Ok| |
+| **urdfdom** | problems when inherit cmake. | |
+| **urdfdom-headers** | Ok| |
 | ros-mpu9150 | Ok| Ok. **Deprecated**|
 | ros-bb-dc-motors | Ok| Ok. **Deprecated**|
 
 *WIP: Work In Progress*
+**Packages out of the scope of the GSOC**
+
 
 ##Recipes list:
 
