@@ -59,7 +59,7 @@ USAGE
 
  (although it's not recommended you can also install ROS in the BeagleBone using the packages stored in the *ipks* directory throught the script `scripts/fixed-ros-install-angstrom.sh`).
 
-* ~~source `/usr/setup.bash`. Updates in the ROS recipes doesn't install scripts in the `/usr/` directory anymore. To configure the enviroment properly check this [bashrc](https://github.com/vmayoral/beagle-ros/blob/master/scripts/bashrc) file. ~~
+* ~~source `/usr/setup.bash`. Updates in the ROS recipes doesn't install scripts in the `/usr/` directory anymore. To configure the enviroment properly check this [bashrc](https://github.com/vmayoral/beagle-ros/blob/master/scripts/bashrc) file.~~
 
 * run `roscore`.
     
