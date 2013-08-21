@@ -29,6 +29,8 @@ It's highly recommended to have the last version of Angstrom.
 
 * **lib**: Libraries used.
 
+* **images**: Beaglebone SD card images with ROS preinstalled.
+
 * **recipes**: OpenEmbedded recipes. These recipes should be used with the meta-ros code.
 
 * **conf**: OpenEmbedded configuration directory. This directory is added so that the beagle-ros project can be directly added as a layer in Angstrom/OpenEmbedded systems.
