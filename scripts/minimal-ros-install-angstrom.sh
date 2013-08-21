@@ -1,5 +1,10 @@
 #!/bin/sh
 
+echo "updating the Angstrom feed to eu.feeds.angstrom-distribution..."
+echo "src/gz base http://eu.feeds.angstrom-distribution.org/feeds/v2012.12/ipk/eglibc/armv7a-vfp-neon/base" > /etc/opkg/base-feed.conf
+echo "updating the python feed to eu.feeds..."
+echo "src/gz python http://eu.feeds.angstrom-distribution.org/feeds/v2012.12/ipk/eglibc/armv7a-vfp-neon/python" > /etc/opkg/python-feed.conf
+
 # Necessary packages:
 opkg install python-core
 
