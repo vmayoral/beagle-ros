@@ -8,8 +8,7 @@ echo ""
 echo "Warning: This script will install a fixed verion of ROS and some functionalities might be outdated. Use the other scripts to get an updated installation."
 echo ""
 
-opkg install ../ipks/
-opkg install ../ipks/catkin
+opkg install ../ipks/catkin*
 opkg install ../ipks/rosbag*
 opkg install ../ipks/rosbash* 
 opkg install ../ipks/rosboost-cfg*
