@@ -52,3 +52,4 @@ cat passwd > /etc/passwd
 echo "source .bashrc" >> ~/.bash_profile
 cat bashrc >> ~/.bashrc
 echo "127.0.0.1     beaglebone      beaglebone" >> /etc/hosts
+touch /usr/.catkin
