@@ -45,9 +45,21 @@ USAGE
 
 * Put the MLO, u-boot and FS in the SD card as explained in http://downloads.angstrom-distribution.org/demo/beaglebone/.
 
-* Install all the packages for ROS in Angstrom sourcing `scripts/minimal-ros-install-angstrom.sh` (although it's not recommended you can also install ROS in the BeagleBone using the packages stored in the *ipks* directory throught the script `scripts/fixed-ros-install-angstrom.sh`).
+* Update the Angstrom feed through `opkg update`.
 
-* ~~source `/usr/setup.bash`~~. Updates in the ROS recipes doesn't install scripts in the `/usr/` directory anymore. To configure the enviroment properly check this [bashrc](https://github.com/vmayoral/beagle-ros/blob/master/scripts/bashrc) file.
+* Install git using `opkg install git`.
+
+* Get the **beagle-ros** code: `git clone git://github.com/vmayoral/beagle-ros.git`.
+
+* Install all the packages for ROS in Angstrom (30 minutes):
+ ```
+ cd beagle-ros/scripts
+ source minimal-ros-install-angstrom.sh
+ ```
+
+ (although it's not recommended you can also install ROS in the BeagleBone using the packages stored in the *ipks* directory throught the script `scripts/fixed-ros-install-angstrom.sh`).
+
+* ~~source `/usr/setup.bash`. Updates in the ROS recipes doesn't install scripts in the `/usr/` directory anymore. To configure the enviroment properly check this [bashrc](https://github.com/vmayoral/beagle-ros/blob/master/scripts/bashrc) file. ~~
 
 * run `roscore`.
     

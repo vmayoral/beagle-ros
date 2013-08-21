@@ -193,6 +193,7 @@ Week 10:
 =======
 What has been accomplished?:
     - Add more IR sensors to the bb_sharp_ir ROS package (GP2Y0D810Z0F and GP2Y0D805Z0F).
+    - Modified the minimal-ros-install-angstrom.sh script to configure the environment automatically.
 
 Issues:
     - urdfdom (ros_control) compiling issues when `inherit cmake`.
