@@ -4,20 +4,20 @@ LICENSE = "BSD"
 LIC_FILES_CHKSUM = "file://package.xml;md5=2ae5ecab1aa3baefe574ee44d91ec0b5"
 
 DEPENDS = "roscpp actionlib \
-            actionlib_msgs \
+            actionlib-msgs \
             angles \
-            message_generation \
+            message-generation \
             rosconsole \
             roscpp \
-            std_msgs \
+            std-msgs \
             turtlesim"
 
-RDEPENDS = "actionlib actionlib_msgs \
+RDEPENDS = "actionlib actionlib-msgs \
             angles \
-            message_runtime \
+            message-runtime \
             rosconsole \
             roscpp \
-            std_msgs \
+            std-msgs \
             turtlesim"
 
 
