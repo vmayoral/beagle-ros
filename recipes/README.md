@@ -9,7 +9,7 @@ The following directories contain bitbake recipes for cross-compiling different 
 |:-------------:| ------------- | ------------ |
 | beginner-tutorials| Ok| Ok |
 | ros-tutorials | Turtlesim doesn't cross-compile. | Ok |
-| common-tutorials | actionlib-tutorials and turtle-actionlib doesn't cross-compile. | Ok |
+| common-tutorials | turtle-actionlib doesn't cross-compile (turtlesim). | Ok |
 | linux-mpu9150 | Ok| Ok |
 | bb-mpu9150 | Ok| Ok |
 | bb-dc-motors | Ok| Ok |
@@ -24,7 +24,7 @@ The following directories contain bitbake recipes for cross-compiling different 
 | **ros-control** | Ok| |
 | **ros-controllers** | WIP | |
 | **tinyxml** | Ok| |
-| **urdfdom** | problems when inherit cmake. | |
+| **urdfdom** | Ok | |
 | **urdfdom-headers** | Ok| |
 | ros-mpu9150 | Ok| Ok. **Deprecated**|
 | ros-bb-dc-motors | Ok| Ok. **Deprecated**|
