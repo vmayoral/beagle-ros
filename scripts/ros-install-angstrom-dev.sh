@@ -8,6 +8,7 @@
 
 # Necessary packages:
 opkg install python-core
+opkg install python-dev
 
 # Users are advised not to manually install gcc, libgcc etc. as resolving the dependencies correctly can be challenging.
 #opkg install task-native-sdk

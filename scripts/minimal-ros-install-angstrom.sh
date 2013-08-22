@@ -10,6 +10,9 @@ opkg update
 
 # Necessary packages:
 opkg install python-core
+#opkg install python-dev
+#opkg install kernel-dev
+#opkg install kernel-headers
 
 # ROS related packages
 
