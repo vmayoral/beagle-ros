@@ -9,7 +9,7 @@ The following directories contain bitbake recipes for cross-compiling different 
 |:-------------:| ------------- | ------------ |
 | beginner-tutorials| Ok| Ok |
 | ros-tutorials | Turtlesim doesn't cross-compile. | Ok |
-| common-tutorials | turtle-actionlib doesn't cross-compile (turtlesim). | Ok |
+| common-tutorials | turtle-actionlib doesn't cross-compile (turtlesim). | |
 | linux-mpu9150 | Ok| Ok |
 | bb-mpu9150 | Ok| Ok |
 | bb-dc-motors | Ok| Ok |
