@@ -1,7 +1,9 @@
 Scripts:
 ========
 
-* **bashrc**: .bashrc file to set all the variables needed for ROS
+* **bashrc**: .bashrc file to set all the variables needed for ROS.
+
+* **passwd**: neccessay file to set the ROS environment configuration.
 
 * **minimal-ros-install-angstrom.sh**: ROS minimal installation. This one should be used by the average user.
 

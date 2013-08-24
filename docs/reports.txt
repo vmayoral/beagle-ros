@@ -194,17 +194,19 @@ Week 10:
 What has been accomplished?:
     - Add more IR sensors to the bb_sharp_ir ROS package (GP2Y0D810Z0F and GP2Y0D805Z0F).
     - Modified the minimal-ros-install-angstrom.sh script to configure the environment automatically.
+    - Tested installation scripts from a clean Angstrom installation (BeagleBone and in the Beaglebone Black).
 
 Issues:
     - new bb_sharp_ir scripts remain untested until i receive the soldered sensor.
     - when using the [i2ctools_python](https://github.com/vmayoral/bb_battery/blob/master/scripts/i2ctools_python.py) class created with the PMIC, writing to a register is not possible (register remain unchanged).
     - issue when installing adafruit-beaglebone-io library (https://github.com/adafruit/adafruit-beaglebone-io-python?source=c) over the provided Angstrom FS Angstrom-systemd-image-eglibc-ipk-v2012.12-beaglebone-2013.07.31.rootfs.tar.xz (http://downloads.angstrom-distribution.org/demo/beaglebone/). Issue after installing kernel-dev and kernel-headers with "limits.h".
-    - 
+    - Turtlesim (ros-tutorials) recipe has been updated but it still doesn't cross-compile. The reasons are discussed here https://groups.google.com/forum/#!topic/beagleboard-gsoc/VXO2vFNPYXE.
     
 Plans for the next week:
     - converting bb_dc_motors to C and use the sysfs interface for pwms
     - continue with the ros_controls recipes.
     - document the ROS packages created according to the ROS documentations conventions.
+    - finish the tests (BB and BBB) rest of the packages. (give feedback about it https://github.com/bmwcarit/meta-ros/issues/123)
    
 
 
