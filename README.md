@@ -60,7 +60,7 @@ USAGE
 * run `roscore`.
     
 ##First steps
-Getting started with Angstrom (or OpenEmbedded) and bitbake might be a bit tough at the beggining but it gets better and after a while you will love it, promised ;).
+Getting started with Angstrom (or OpenEmbedded) and bitbake might be a bit tough at the beggining but it gets better and after a while you will love it, promised ;). First, take a look at the [FAQ](https://github.com/vmayoral/beagle-ros/wiki/FAQ).
 
 Beagle-ROS makes use of the meta-ros project, an OpenEmbedded layer that provides ROS to embedded devices. In order to get comfortable with meta-ros the [diving-meta-ros](https://github.com/vmayoral/diving-meta-ros) repo aims to give you some aid with the first steps (take into account that this tutorial assumes that you are already comfortable with ROS. If not take a look at their [tutorials](http://www.ros.org/wiki/ROS/Tutorials)).
     
