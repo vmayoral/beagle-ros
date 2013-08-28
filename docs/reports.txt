@@ -223,6 +223,7 @@ Issues:
     - Turtlesim (ros-tutorials) recipe has been updated but it still doesn't cross-compile. The reasons are discussed here https://groups.google.com/forum/#!topic/beagleboard-gsoc/VXO2vFNPYXE.
     
 Plans for the next week:
+    - Khem comment: and in beagle-ros layer RDEPENDS should be changed to RDEPENDS_${PN}
     - continue with the ros_controls recipes and the turtlesim one.
     - finish the tests (BB and BBB) rest of the packages. (give feedback about it https://github.com/bmwcarit/meta-ros/issues/123)
     - create a BB image with everything installed. Upload to sf.net
