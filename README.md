@@ -34,13 +34,13 @@ It's highly recommended to have the last version of Angstrom.
 * **conf**: OpenEmbedded configuration directory. This directory is added so that the beagle-ros project can be directly added as a layer in Angstrom/OpenEmbedded systems.
 
 
-##DEPENDENCIES
+##Dependencies
 
-  This layer depends on:
+This layer depends on:
 
-  URI: https://github.com/bmwcarit/meta-ros
-  branch: master
-  revision: HEAD
+    URI: https://github.com/bmwcarit/meta-ros
+    branch: master
+    revision: HEAD
 
 
 USAGE
