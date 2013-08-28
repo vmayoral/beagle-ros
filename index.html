@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
+
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <title>Beagle-ROS by vmayoral</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="inner">
+        <h1>Beagle-ROS</h1>
+        <h2>Integration of the Robot Operative System (ROS) and the BeagleBone.</h2>
+        <a href="https://github.com/vmayoral/beagle-ros" class="button"><small>View project on</small>GitHub</a>
+      </div>
+    </header>
+
+    <div id="content-wrapper">
+      <div class="inner clearfix">
+        <section id="main-content">
+          <h1>
+<a name="beagle-ros-project" class="anchor" href="#beagle-ros-project"><span class="octicon octicon-link"></span></a>BEAGLE-ROS project</h1>
+
+<p><img src="http://beagleboard.org/static/images/beagle_logo_hdr.gif" alt="BeagleBone"><img src="http://www.ros.org/_wiki/images/ros_org.png" alt="ROS"></p>
+
+<p>Integration of the Robot Operative System (ROS) and the BeagleBone through the <a href="https://github.com/bmwcarit/meta-ros">meta-ros</a> project, a layer for OpenEmbedded Linux.</p>
+
+<p>This project is part of the Google Summer of Code (GSOC) 2013.
+The aim is to work in the integration of the Robot Operative System (ROS) and the BeagleBone. Both ROS and the BeagleBone are great tools and increasingly being used in robotics. Having both of them working together in a easy way would be a great asset. </p>
+
+<p>A lot of users show their interest for ARM ROS integration. Some made a couple of tutorials about how to install ROS on Ubuntu on the BeagleBoard however this documentation is getting a bit old fashioned and probably not the right way. There's also some code to use lightweight versions of ROS but again, roboticists might not be looking for a light-ROS device but a fully functional one.</p>
+
+<hr><p>It's highly recommended to have the last version of Angstrom.</p>
+
+<hr><h2>
+<a name="description-of-the-files" class="anchor" href="#description-of-the-files"><span class="octicon octicon-link"></span></a>Description of the files:</h2>
+
+<ul>
+<li><p><strong>LICENSE</strong>: License of the code.</p></li>
+<li><p><strong>README.md</strong>: This document.</p></li>
+<li><p><strong>scripts</strong>: Scripts to automate processes.</p></li>
+<li><p><strong>docs</strong>: Documentation.</p></li>
+<li><p><strong>lib</strong>: Libraries used.</p></li>
+<li><p><strong>recipes</strong>: OpenEmbedded recipes. These recipes should be used with the meta-ros code.</p></li>
+<li><p><strong>conf</strong>: OpenEmbedded configuration directory. This directory is added so that the beagle-ros project can be directly added as a layer in Angstrom/OpenEmbedded systems.</p></li>
+</ul><h1>
+<a name="usage" class="anchor" href="#usage"><span class="octicon octicon-link"></span></a>USAGE</h1>
+
+<h2>
+<a name="getting-roscore-running" class="anchor" href="#getting-roscore-running"><span class="octicon octicon-link"></span></a>Getting roscore running</h2>
+
+<ul>
+<li><p>Get an Angstrom distribution following <a href="http://www.angstrom-distribution.org/building-angstrom">http://www.angstrom-distribution.org/building-angstrom</a>.</p></li>
+<li><p>Put the MLO, u-boot and FS in the SD card as explained in <a href="http://downloads.angstrom-distribution.org/demo/beaglebone/">http://downloads.angstrom-distribution.org/demo/beaglebone/</a>.</p></li>
+<li><p>Update the Angstrom feed through <code>opkg update</code>.</p></li>
+<li><p>Install git using <code>opkg install git</code>.</p></li>
+<li><p>Get the <strong>beagle-ros</strong> code: <code>git clone git://github.com/vmayoral/beagle-ros.git</code>.</p></li>
+<li>
+<p>Install all the packages for ROS in Angstrom (30 minutes):</p>
+
+<pre><code>cd beagle-ros/scripts
+source minimal-ros-install-angstrom.sh
+</code></pre>
+</li>
+<li><p><del>source <code>/usr/setup.bash</code>. Updates in the ROS recipes doesn't install scripts in the <code>/usr/</code> directory anymore. To configure the enviroment properly check this <a href="https://github.com/vmayoral/beagle-ros/blob/master/scripts/bashrc">bashrc</a> file.</del></p></li>
+<li><p>run <code>roscore</code>.</p></li>
+</ul><h2>
+<a name="first-steps" class="anchor" href="#first-steps"><span class="octicon octicon-link"></span></a>First steps</h2>
+
+<p>Getting started with Angstrom (or OpenEmbedded) and bitbake might be a bit tough at the beggining but it gets better and after a while you will love it, promised ;). First, take a look at the <a href="https://github.com/vmayoral/beagle-ros/wiki/FAQ">FAQ</a>.</p>
+
+<p>Beagle-ROS makes use of the meta-ros project, an OpenEmbedded layer that provides ROS to embedded devices. In order to get comfortable with meta-ros the <a href="https://github.com/vmayoral/diving-meta-ros">diving-meta-ros</a> repo aims to give you some aid with the first steps (take into account that this tutorial assumes that you are already comfortable with ROS. If not take a look at their <a href="http://www.ros.org/wiki/ROS/Tutorials">tutorials</a>).</p>
+
+<h2>
+<a name="installing-the-recipes" class="anchor" href="#installing-the-recipes"><span class="octicon octicon-link"></span></a>Installing the recipes</h2>
+
+<p>The easiest way to install the bitbake recipes provided is to <code>git clone</code> the beagle-ros code directly into the Angstrom <code>sources/</code> directory and add the beagle-ros as a layer:</p>
+
+<ul>
+<li>Edit <code>conf/bblayers.conf</code>
+</li>
+<li>add <code>${TOPDIR}/sources/beagle-ros \</code> to the <code>BASELAYERS</code> variable</li>
+</ul><p>It's also possible to add the recipes inside of the meta-ros code. There're instructions in <a href="https://github.com/vmayoral/beginner_tutorials/blob/master/README.md">https://github.com/vmayoral/beginner_tutorials/blob/master/README.md</a> of how to put these recipes in the meta-ros file structure. (<a href="https://github.com/vmayoral/beagle-ros/tree/master/recipes">Here</a> you can see the recipes available).</p>
+
+<h2>
+<a name="cross-compiling-the-recipes" class="anchor" href="#cross-compiling-the-recipes"><span class="octicon octicon-link"></span></a>Cross-compiling the recipes</h2>
+
+<p>From the <code>TOPDIR</code> of Angstrom run <code>bitbake &lt;recipe-name&gt;</code>. For example:
+ <code>bitbake beginner-tutorials</code></p>
+        </section>
+
+        <aside id="sidebar">
+          <a href="https://github.com/vmayoral/beagle-ros/zipball/master" class="button">
+            <small>Download</small>
+            .zip file
+          </a>
+          <a href="https://github.com/vmayoral/beagle-ros/tarball/master" class="button">
+            <small>Download</small>
+            .tar.gz file
+          </a>
+
+          <p class="repo-owner"><a href="https://github.com/vmayoral/beagle-ros"></a> is maintained by <a href="https://github.com/vmayoral">vmayoral</a>.</p>
+
+          <p>This page was generated by <a href="pages.github.com">GitHub Pages</a> using the Architect theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.</p>
+        </aside>
+      </div>
+    </div>
+
+  
+  </body>
+</html>
