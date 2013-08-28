@@ -4,7 +4,7 @@ LICENSE = "BSD"
 LIC_FILES_CHKSUM = "file://package.xml;beginline=7;endline=7;md5=d566ef916e9dedc494f5f793a6690ba5"
 
 DEPENDS = "rosconsole tf roscpp angles message-generation \
-            dynamic-reconfigure tinyxml realtime-tools message-filters"
+            dynamic-reconfigure libtinyxml realtime-tools message-filters"
 
 SRC_URI = "https://github.com/ros-controls/control_toolbox/archive/${PV}.tar.gz;downloadfilename=${BP}.tar.gz"
 SRC_URI += "file://0001-crosscompile-CATKIN_ENABLE_TESTING-fix.patch;striplevel=1"

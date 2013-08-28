@@ -217,15 +217,17 @@ What has been accomplished?:
     - converting bb_dc_motors to C and use the sysfs interface for pwms
     - new bb_sharp_ir scripts tested with the received sensors.
     - [FAQ](https://github.com/vmayoral/beagle-ros/wiki/FAQ) created. 
+    - ROS packages documented (bb_altimeter, bb_mpu9150, ...)
 
 Issues:
     - when using the [i2ctools_python](https://github.com/vmayoral/bb_battery/blob/master/scripts/i2ctools_python.py) class created with the PMIC, writing to a register is not possible (register remain unchanged).
     - issue when installing adafruit-beaglebone-io library (https://github.com/adafruit/adafruit-beaglebone-io-python?source=c) over the provided Angstrom FS Angstrom-systemd-image-eglibc-ipk-v2012.12-beaglebone-2013.07.31.rootfs.tar.xz (http://downloads.angstrom-distribution.org/demo/beaglebone/). Issue after installing kernel-dev and kernel-headers with "limits.h".
     - Turtlesim (ros-tutorials) recipe has been updated but it still doesn't cross-compile. The reasons are discussed here https://groups.google.com/forum/#!topic/beagleboard-gsoc/VXO2vFNPYXE.
+    - ROS packages documented (bb_altimeter, bb_mpu9150, ...)
     
 Plans for the next week:
     - continue with the ros_controls recipes.
-    - document the ROS packages created according to the ROS documentations conventions.
+    - document the ROS packages created according to the ROS documentations conventions. Create a wiki page about BeagleBone and Angstrom follow this concept http://www.ros.org/wiki/BeagleBoard)
     - finish the tests (BB and BBB) rest of the packages. (give feedback about it https://github.com/bmwcarit/meta-ros/issues/123)
    
 

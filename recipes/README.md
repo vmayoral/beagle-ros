@@ -13,7 +13,7 @@ The following directories contain bitbake recipes for cross-compiling different 
 | linux-mpu9150 | Ok| Ok |
 | bb-mpu9150 | Ok| Ok |
 | bb-dc-motors | Ok| Ok |
-| bb-sharp-ir | Ok| GP2Y0D810Z0F and GP2Y0D805Z0F remain untested.|
+| bb-sharp-ir | Ok| Ok|
 | bb-altimeter | Ok| Code seems to work but there're some issues with the sensor data |
 | **cmake-modules** | Ok| |
 | **control-msgs** | Ok| |
