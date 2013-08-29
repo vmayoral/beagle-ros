@@ -12,7 +12,7 @@ DEPENDS = "roscpp actionlib \
             std-msgs \
             turtlesim"
 
-RDEPENDS = "actionlib actionlib-msgs \
+RDEPENDS_${PN} = "actionlib actionlib-msgs \
             angles \
             message-runtime \
             rosconsole \
