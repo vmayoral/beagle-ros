@@ -80,6 +80,9 @@ The easiest way to install the bitbake recipes provided is to `git clone` the be
 It's also possible to add the recipes inside of the meta-ros code. There're instructions in https://github.com/vmayoral/beginner_tutorials/blob/master/README.md of how to put these recipes in the meta-ros file structure. ([Here](https://github.com/vmayoral/beagle-ros/tree/master/recipes) you can see the recipes available).
 
 ##Cross-compiling the recipes
-From the `TOPDIR` of Angstrom run `bitbake <recipe-name>`. For example:
- `bitbake beginner-tutorials`
+From the `TOPDIR` of Angstrom run `bitbake <recipe-name>`. 
+    For example: `bitbake beginner-tutorials`
+
+(Refer to the [FAQ](https://github.com/vmayoral/beagle-ros/wiki/FAQ#is-it-possible-to-cross-compile-ros-for-other-arm-processors) if you wish to cross-compile all the neccessary recipes to have ROS in your machine.)
+
 

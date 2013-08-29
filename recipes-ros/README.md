@@ -8,8 +8,8 @@ The following directories contain bitbake recipes for cross-compiling different 
 | Recipe        | Status (cross-compilation)       | Test (BeagleBone) |
 |:-------------:| ------------- | ------------ |
 | beginner-tutorials| Ok| Ok |
-| ros-tutorials | Turtlesim doesn't cross-compile. | Ok |
-| common-tutorials | turtle-actionlib doesn't cross-compile (turtlesim). | |
+| ros-tutorials | Turtlesim doesn't cross-compile. Seems like findQT4 cmake macro is broken | Ok* |
+| common-tutorials | turtle-actionlib doesn't cross-compile (turtlesim). | Ok*|
 | linux-mpu9150 | Ok| Ok |
 | bb-mpu9150 | Ok| Ok |
 | bb-dc-motors | Ok| Ok |
@@ -29,9 +29,9 @@ The following directories contain bitbake recipes for cross-compiling different 
 | ros-mpu9150 | Ok| Ok. **Deprecated**|
 | ros-bb-dc-motors | Ok| Ok. **Deprecated**|
 
-*WIP: Work In Progress*
-
-**(bold): Packages out of the scope of the GSOC**
+    *WIP: Work In Progress*
+    *Tested what compiles
+    **(bold): Packages out of the scope of the GSOC**
 
 
 ##Recipes list:
@@ -86,7 +86,6 @@ The following directories contain bitbake recipes for cross-compiling different 
 
 
 
-
 ##Installing the recipes
 The easiest way to install the recipes is to `git clone` the beagle-ros code directly into the Angstrom `sources/` directory and add the beagle-ros as a layer:
 * Edit `conf/bblayers.conf`
@@ -99,28 +98,3 @@ From the `TOPDIR` of Angstrom run `bitbake <recipe-name>`. For example:
 * `bitbake beginner-tutorials`
 * `bitbake roscpp-tutorials`
 
-LICENSE:
-=======
-
-The MIT License (MIT)
-
-Copyright (c) 2013 Víctor Mayoral Vilches.
-Mentored by Koen Kooi.
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in
-all copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
-THE SOFTWARE.
