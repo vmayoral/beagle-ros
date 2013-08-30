@@ -29,7 +29,7 @@ It's highly recommended to have the last version of Angstrom.
 
 * **lib**: Libraries used.
 
-* **recipes**: OpenEmbedded recipes. These recipes should be used with the meta-ros code.
+* **recipes-ros**: OpenEmbedded recipes. These recipes should be used with the meta-ros code.
 
 * **conf**: OpenEmbedded configuration directory. This directory is added so that the beagle-ros project can be directly added as a layer in Angstrom/OpenEmbedded systems.
 
@@ -77,7 +77,7 @@ The easiest way to install the bitbake recipes provided is to `git clone` the be
 * Edit `conf/bblayers.conf`
 * add `${TOPDIR}/sources/beagle-ros \` to the `BASELAYERS` variable
 
-It's also possible to add the recipes inside of the meta-ros code. There're instructions in https://github.com/vmayoral/beginner_tutorials/blob/master/README.md of how to put these recipes in the meta-ros file structure. ([Here](https://github.com/vmayoral/beagle-ros/tree/master/recipes) you can see the recipes available).
+It's also possible to add the recipes inside of the meta-ros code. There're instructions in https://github.com/vmayoral/beginner_tutorials/blob/master/README.md of how to put these recipes in the meta-ros file structure. ([Here](https://github.com/vmayoral/beagle-ros/tree/master/recipes-ros) you can see the recipes available).
 
 ##Cross-compiling the recipes
 From the `TOPDIR` of Angstrom run `bitbake <recipe-name>`. 
@@ -86,3 +86,13 @@ From the `TOPDIR` of Angstrom run `bitbake <recipe-name>`.
 (Refer to the [FAQ](https://github.com/vmayoral/beagle-ros/wiki/FAQ#is-it-possible-to-cross-compile-ros-for-other-arm-processors) if you wish to cross-compile all the neccessary recipes to have ROS in your machine.)
 
 
+BeagleBone ROS Packages
+==================
+Some ROS Packages designed for the BeagleBone:
+
+* [bb_sharp_ir](https://github.com/vmayoral/bb_sharp_ir): BeagleBone Shark IR sensors ROS Package.
+* [bb_dc_motors](https://github.com/vmayoral/bb_dc_motors): ROS package that launches a node to control a DC motor connected to the BeagleBone.
+* [bb_mpu9150](https://github.com/vmayoral/bb_mpu9150): BeagleBone ROS package that publishes the Invensense MPU-9150 data into a Topic.
+* [bb_altimeter](https://github.com/vmayoral/bb_altimeter): ROS package for the BeagleBone that publishes the altimeter MPL3115A2 values to a Topic.
+
+(recipes to cross-compile these packages are available at the `recipes-ros` folder)

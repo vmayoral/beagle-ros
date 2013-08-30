@@ -210,7 +210,6 @@ Plans for the next week:
    
 
 
-
 Week 11:
 =======
 What has been accomplished?:
@@ -218,15 +217,15 @@ What has been accomplished?:
     - new bb_sharp_ir scripts tested with the received sensors.
     - [FAQ](https://github.com/vmayoral/beagle-ros/wiki/FAQ) created. 
     - ROS packages documented (bb_altimeter, bb_mpu9150, ...)
+    - Create a wiki page about BeagleBone.
 
 Issues:
     - Turtlesim (ros-tutorials) recipe has been updated but it still doesn't cross-compile. The reasons are discussed here https://groups.google.com/forum/#!topic/beagleboard-gsoc/VXO2vFNPYXE.
     
 Plans for the next week:
     - continue with the ros_controls recipes and the turtlesim one.
-    - finish the tests (BB and BBB) rest of the packages. (give feedback about it https://github.com/bmwcarit/meta-ros/issues/123)
-    - create a BB image with everything installed. Upload to sf.net
-    - Create a wiki page about BeagleBone and Angstrom follow this concept http://www.ros.org/wiki/BeagleBoard)
+    - Add Angstrom as one of the platforms at http://wiki.ros.osuosl.org/hydro/Installation (a question in the mailing lists has already been posted). Edit an Angstrom page as well. Use the following Angstrom logo https://github.com/Angstrom-distribution/meta-angstrom/blob/master/contrib/angstrom.png.
+    - Add ROS package wiki pages for the bb_altimeter, bb_mpu9150, ...
    
 
 
