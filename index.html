@@ -51,9 +51,19 @@ The aim is to work in the integration of the Robot Operative System (ROS) and th
 <li><p><strong>scripts</strong>: Scripts to automate processes.</p></li>
 <li><p><strong>docs</strong>: Documentation.</p></li>
 <li><p><strong>lib</strong>: Libraries used.</p></li>
-<li><p><strong>recipes</strong>: OpenEmbedded recipes. These recipes should be used with the meta-ros code.</p></li>
+<li><p><strong>recipes-ros</strong>: OpenEmbedded recipes. These recipes should be used with the meta-ros code.</p></li>
 <li><p><strong>conf</strong>: OpenEmbedded configuration directory. This directory is added so that the beagle-ros project can be directly added as a layer in Angstrom/OpenEmbedded systems.</p></li>
-</ul><h1>
+</ul><h2>
+<a name="dependencies" class="anchor" href="#dependencies"><span class="octicon octicon-link"></span></a>Dependencies</h2>
+
+<p>This layer depends on:</p>
+
+<pre><code>URI: https://github.com/bmwcarit/meta-ros
+branch: master
+revision: HEAD
+</code></pre>
+
+<h1>
 <a name="usage" class="anchor" href="#usage"><span class="octicon octicon-link"></span></a>USAGE</h1>
 
 <h2>
@@ -90,13 +100,31 @@ source minimal-ros-install-angstrom.sh
 <li>Edit <code>conf/bblayers.conf</code>
 </li>
 <li>add <code>${TOPDIR}/sources/beagle-ros \</code> to the <code>BASELAYERS</code> variable</li>
-</ul><p>It's also possible to add the recipes inside of the meta-ros code. There're instructions in <a href="https://github.com/vmayoral/beginner_tutorials/blob/master/README.md">https://github.com/vmayoral/beginner_tutorials/blob/master/README.md</a> of how to put these recipes in the meta-ros file structure. (<a href="https://github.com/vmayoral/beagle-ros/tree/master/recipes">Here</a> you can see the recipes available).</p>
+</ul><p>It's also possible to add the recipes inside of the meta-ros code. There're instructions in <a href="https://github.com/vmayoral/beginner_tutorials/blob/master/README.md">https://github.com/vmayoral/beginner_tutorials/blob/master/README.md</a> of how to put these recipes in the meta-ros file structure. (<a href="https://github.com/vmayoral/beagle-ros/tree/master/recipes-ros">Here</a> you can see the recipes available).</p>
 
 <h2>
 <a name="cross-compiling-the-recipes" class="anchor" href="#cross-compiling-the-recipes"><span class="octicon octicon-link"></span></a>Cross-compiling the recipes</h2>
 
-<p>From the <code>TOPDIR</code> of Angstrom run <code>bitbake &lt;recipe-name&gt;</code>. For example:
- <code>bitbake beginner-tutorials</code></p>
+<p>From the <code>TOPDIR</code> of Angstrom run <code>bitbake &lt;recipe-name&gt;</code>. 
+    For example: <code>bitbake beginner-tutorials</code></p>
+
+<p>(Refer to the <a href="https://github.com/vmayoral/beagle-ros/wiki/FAQ#is-it-possible-to-cross-compile-ros-for-other-arm-processors">FAQ</a> if you wish to cross-compile all the neccessary recipes to have ROS in your machine.)</p>
+
+<h1>
+<a name="beaglebone-ros-packages" class="anchor" href="#beaglebone-ros-packages"><span class="octicon octicon-link"></span></a>BeagleBone ROS Packages</h1>
+
+<p>Some ROS Packages designed for the BeagleBone:</p>
+
+<ul>
+<li>
+<a href="https://github.com/vmayoral/bb_sharp_ir">bb_sharp_ir</a>: BeagleBone Shark IR sensors ROS Package.</li>
+<li>
+<a href="https://github.com/vmayoral/bb_dc_motors">bb_dc_motors</a>: ROS package that launches a node to control a DC motor connected to the BeagleBone.</li>
+<li>
+<a href="https://github.com/vmayoral/bb_mpu9150">bb_mpu9150</a>: BeagleBone ROS package that publishes the Invensense MPU-9150 data into a Topic.</li>
+<li>
+<a href="https://github.com/vmayoral/bb_altimeter">bb_altimeter</a>: ROS package for the BeagleBone that publishes the altimeter MPL3115A2 values to a Topic.</li>
+</ul><p>(recipes to cross-compile these packages are available at the <code>recipes-ros</code> folder)</p>
         </section>
 
         <aside id="sidebar">
