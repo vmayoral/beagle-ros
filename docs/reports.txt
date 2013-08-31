@@ -224,7 +224,6 @@ Issues:
     
 Plans for the next week:
     - continue with the ros_controls recipes and the turtlesim one.
-    - Add Angstrom as one of the platforms at http://wiki.ros.osuosl.org/hydro/Installation (a question in the mailing lists has already been posted). Edit an Angstrom page as well. Use the following Angstrom logo https://github.com/Angstrom-distribution/meta-angstrom/blob/master/contrib/angstrom.png.
     - Add ROS package wiki pages for the bb_altimeter, bb_mpu9150, ...
    
 
