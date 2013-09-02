@@ -243,6 +243,7 @@ Issues:
     - Some missing dependencies with ros_control recipes: wxwidgets, collada-dom, wxpython, orocos-kdl. WIP.
     
 Plans for the next week:
+    - start completing the Beagle-ROS page at Melange
     - continue with the ros_controls recipes and the turtlesim one.
     - answer mails and keep improving documentation.
    
