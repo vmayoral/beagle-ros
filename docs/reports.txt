@@ -233,3 +233,19 @@ Plans for the next week:
 
 
 
+Week 12:
+=======
+What has been accomplished?:
+    - Some progress with ros_tutorials: assimp recipe added.
+
+Issues:
+    - Turtlesim (ros-tutorials) recipe has been updated but it still doesn't cross-compile. The reasons are discussed here https://groups.google.com/forum/#!topic/beagleboard-gsoc/VXO2vFNPYXE.
+    - Some missing dependencies with ros_control recipes: wxwidgets, collada-dom, wxpython, orocos-kdl. WIP.
+    
+Plans for the next week:
+    - continue with the ros_controls recipes and the turtlesim one.
+    - answer mails and keep improving documentation.
+   
+
+
+
