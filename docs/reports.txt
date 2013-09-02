@@ -217,14 +217,18 @@ What has been accomplished?:
     - new bb_sharp_ir scripts tested with the received sensors.
     - [FAQ](https://github.com/vmayoral/beagle-ros/wiki/FAQ) created. 
     - ROS packages documented (bb_altimeter, bb_mpu9150, ...)
-    - Create a wiki page about BeagleBone.
+    - Created a wiki page about BeagleBone (http://wiki.ros.org/BeagleBone).
+    - Created a wiki page for Angstrom (http://wiki.ros.org/hydro/Installation/Angstrom).
+    - Included Angstrom as a supported platform (http://wiki.ros.org/hydro/Installation/Platforms).
+    - Tests are fine. All the packages work both in the BB and in the BBB running Angstrom.
 
 Issues:
     - Turtlesim (ros-tutorials) recipe has been updated but it still doesn't cross-compile. The reasons are discussed here https://groups.google.com/forum/#!topic/beagleboard-gsoc/VXO2vFNPYXE.
+    - Some missing dependencies with ros_control recipes: wxwidgets, collada-dom, wxpython, orocos-kdl. WIP.
     
 Plans for the next week:
     - continue with the ros_controls recipes and the turtlesim one.
-    - Add ROS package wiki pages for the bb_altimeter, bb_mpu9150, ...
+    - answer mails and keep improving documentation.
    
 
 
