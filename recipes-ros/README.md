@@ -19,10 +19,10 @@ The following directories contain bitbake recipes for cross-compiling different 
 | **control-msgs** | Ok| |
 | **control-toolbox** | Ok| |
 | **realtime-tools** | Ok| |
-| **robot-model** | WIP | |
+| **robot-model** | urdf-parser-plugin, urdf and resource-retriever cross-compile for now. | |
 | **rosconsole-bridge** | Ok| |
 | **ros-control** | Ok| |
-| **ros-controllers** | WIP | |
+| **ros-controllers** | Ok | |
 | **tinyxml** | Ok| |
 | **urdfdom** | Ok | |
 | **urdfdom-headers** | Ok| |

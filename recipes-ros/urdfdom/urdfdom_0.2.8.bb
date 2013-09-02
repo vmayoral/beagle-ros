@@ -14,9 +14,12 @@ SRC_URI += "file://0001-CMakelists-urdf_parser-fix.patch;striplevel=1;name=patch
 SRC_URI[patch.md5sum] = "3f4af4f833044c287e17ba136f5c84c8"
 SRC_URI[patch.sha256sum] = "2cace49c2d02dffb4648d8333db2716b21691c69a30fc68a4d10f317ee0d6e4a"
 
+#FILES_SOLIBSDEV = ""
 FILES_${PN} += "${libdir}/liburdfdom_model.so \
                 ${libdir}/liburdfdom_model_state.so \
                 ${libdir}/liburdfdom_sensor.so \
                 ${libdir}/liburdfdom_world.so"
 
+
+inherit ros
 inherit cmake
