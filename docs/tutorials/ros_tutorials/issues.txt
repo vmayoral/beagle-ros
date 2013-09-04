@@ -59,7 +59,6 @@ Tutorial 7. Understanding ROS Nodes
 (http://www.ros.org/wiki/ROS/Tutorials/UnderstandingNodes)
     - Completed.
         Turtlesim has been run in a Desktop machine agains the core running in the beaglebone. It's necessary to set the hosts at /etc/hosts
-    - The nodes that have been launched even after stopping them "rosnode list" shows them. This is an issue that also appears in the Desktop version of ROS. (this seems to happen with turtlesim)
 
 
 Tutorial 8. Building and using catkin packages in a workspace
@@ -92,4 +91,4 @@ ros_tutorials:
 
 common_tutorials:
 ================
-    - same with the common_tutorials (http://www.ros.org/wiki/common_tutorials). The recipes don't compile.
+    - same with the common_tutorials (http://www.ros.org/wiki/common_tutorials). The turtle-* recipe doesn't cross compile (needs turtlesim).
