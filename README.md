@@ -90,6 +90,19 @@ BeagleBone ROS Packages
 ==================
 Some ROS Packages designed for the BeagleBone:
 
+<a href="https://github.com/vmayoral/bb_altimeter">
+<img src="https://raw.github.com/vmayoral/beagle-ros/master/docs/images/bb_altimeter.png" width="150px" />
+</a>
+<a href="https://github.com/vmayoral/bb_mpu9150">
+<img src="https://raw.github.com/vmayoral/beagle-ros/master/docs/images/bb_mpu9150_bb.png" width="150px" />
+</a>
+<a href="https://github.com/vmayoral/bb_sharp_ir">
+<img src="https://raw.github.com/vmayoral/beagle-ros/master/docs/images/bb_sharp_ir_bb.png" width="170px" />
+</a>
+<a href="https://github.com/vmayoral/bb_dc_motors">
+<img src="https://raw.github.com/vmayoral/beagle-ros/master/docs/images/bb_dc_motors_bb.png" width="250px" />
+</a>
+
 * [bb_sharp_ir](https://github.com/vmayoral/bb_sharp_ir): BeagleBone Shark IR sensors ROS Package.
 * [bb_dc_motors](https://github.com/vmayoral/bb_dc_motors): ROS package that launches a node to control a DC motor connected to the BeagleBone.
 * [bb_mpu9150](https://github.com/vmayoral/bb_mpu9150): BeagleBone ROS package that publishes the Invensense MPU-9150 data into a Topic.
