@@ -237,6 +237,7 @@ Week 12:
 =======
 What has been accomplished?:
     - Some progress with ros_tutorials: assimp recipe added.
+    - Fritzing models added to docs/fritzing_models.
 
 Issues:
     - Turtlesim (ros-tutorials) recipe has been updated but it still doesn't cross-compile. The reasons are discussed here https://groups.google.com/forum/#!topic/beagleboard-gsoc/VXO2vFNPYXE.
