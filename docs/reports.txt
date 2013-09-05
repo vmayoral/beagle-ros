@@ -238,15 +238,21 @@ Week 12:
 What has been accomplished?:
     - Some progress with ros_tutorials: assimp recipe added.
     - Fritzing models added to docs/fritzing_models.
+    - orocos-kdl and python-orocos-kdl recipes created.
+    - eigen recipe created. Needs more work.
 
 Issues:
     - Turtlesim (ros-tutorials) recipe has been updated but it still doesn't cross-compile. The reasons are discussed here https://groups.google.com/forum/#!topic/beagleboard-gsoc/VXO2vFNPYXE.
     - Some missing dependencies with ros_control recipes: wxwidgets, collada-dom, wxpython, orocos-kdl. WIP.
+    - orocos-kdl: issue finding eigen3 (it seems Angstrom has an issue in general with Find macro). eigen recipes created. This issue could also be solved using "koen's first suggestion" but i'm not sure how yet.
     
 Plans for the next week:
     - start completing the Beagle-ROS page at Melange
     - continue with the ros_controls recipes and the turtlesim one.
     - answer mails and keep improving documentation.
+
+Questions:
+    - regarding the first option to deal with the Find* problems, i'm not sure where is should add that cmake option. A line containing "ADD_DEFINITIONS(-DEIGEN3_INCLUDE_DIR=${STAGING_INCDIR})" here https://github.com/smits/orocos-kdl-release/blob/release/hydro/orocos_kdl/CMakeLists.txt#L48?
    
 
 
