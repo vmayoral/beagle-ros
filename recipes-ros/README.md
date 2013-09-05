@@ -18,7 +18,7 @@ The following directories contain bitbake recipes for cross-compiling different 
 | ros-mpu9150 | Ok| Ok. **Deprecated**|
 | ros-bb-dc-motors | Ok| Ok. **Deprecated**|
 
-    *WIP: Work In Progress*
+    WIP: Work In Progress
     *Tested what compiles
 
 Also some further work which is not in the scope of the GSOC:
@@ -43,7 +43,7 @@ Also some further work which is not in the scope of the GSOC:
 | **orocos-kdl** | WIP| |
 | **python-orocos-kdl** | WIP| |
 
-    **(bold): Packages out of the scope of the GSOC**
+    (bold): Packages out of the scope of the GSOC
 
 
 -------
