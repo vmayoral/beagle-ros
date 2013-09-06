@@ -247,6 +247,7 @@ Issues:
     - orocos-kdl: issue finding eigen3 (it seems Angstrom has an issue in general with Find macro). eigen recipes created. This issue could also be solved using "koen's first suggestion" but i'm not sure how yet.
     
 Plans for the next week:
+    - for some reason the angstrom page is not available anymore at http://wiki.ros.org/hydro/Installation/Platforms. Check it.
     - start completing the Beagle-ROS page at Melange
     - continue with the ros_controls recipes and the turtlesim one.
     - answer mails and keep improving documentation.
