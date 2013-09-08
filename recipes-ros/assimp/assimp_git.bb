@@ -10,5 +10,4 @@ SRCREV = "${AUTOREV}"
 
 S = "${WORKDIR}/git"
 
-#inherit catkin
 inherit cmake
