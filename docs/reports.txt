@@ -248,13 +248,32 @@ Issues:
     - orocos-kdl: issue finding eigen3 (it seems Angstrom has an issue in general with Find macro). eigen recipes created. This issue could also be solved using "koen's first suggestion" but i'm not sure how yet.
     
 Plans for the next week:
-    - start completing the Beagle-ROS page at Melange
+    - Merge the ros-control recipes that compile properly with meta-ros.
     - continue with the ros_controls recipes and the turtlesim one.
     - answer mails and keep improving documentation.
 
 Questions:
     - regarding the first option to deal with the Find* problems, i'm not sure where is should add that cmake option. A line containing "ADD_DEFINITIONS(-DEIGEN3_INCLUDE_DIR=${STAGING_INCDIR})" here https://github.com/smits/orocos-kdl-release/blob/release/hydro/orocos_kdl/CMakeLists.txt#L48?
    
+
+Week 13:
+=======
+What has been accomplished?:
+    - eigen recipe available from the meta-ros layer.
+    - orocos-kdl recipe completed.
+    - wxwidgets recipe provide by Koen 
+
+Issues:
+    - Turtlesim (ros-tutorials) recipe has been updated but it still doesn't cross-compile. The reasons are discussed here https://groups.google.com/forum/#!topic/beagleboard-gsoc/VXO2vFNPYXE.
+    - wxpython issues. See https://gist.github.com/vmayoral/6496570.
+    - python-orocos-kdl
+    
+Plans for the next week:
+    - Merge the ros-control recipes that compile properly with meta-ros.
+    - Continue with the ros_controls recipes and the turtlesim one.
+    - Answer mails and keep improving documentation.
+    - Give it a try to vvu|Log BeagleDroid project.
+
 
 
 

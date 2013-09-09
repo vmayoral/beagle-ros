@@ -1,7 +1,7 @@
 DESCRIPTION = "Kinematics and Dynamics Library: Orocos project to supply RealTime usable kinematics and dynamics code, it contains code for rigid body kinematics calculations and representations for kinematic structures and their inverse and forward kinematic solvers."
 SECTION = "devel"
 LICENSE = "LGPL"
-LIC_FILES_CHKSUM = "file://manifest.xml;beginline=9;endline=9;md5=4899473e78369893d3ddc4a151717465"
+LIC_FILES_CHKSUM = "file://manifest.xml;beginline=9;endline=9;md5=17b5e0bdb72a7c324b6ddcfaa9829e8f"
 
 
 SRC_URI = "https://github.com/smits/orocos-kdl-release/archive/release/hydro/orocos_kdl/${PV}.tar.gz;downloadfilename=${BP}.tar.gz"
