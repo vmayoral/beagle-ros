@@ -1,0 +1,31 @@
+From 828e69c3421f30039e37d032c55558542b5f838e Mon Sep 17 00:00:00 2001
+From: vmayoral <v.mayoralv@gmail.com>
+Date: Tue, 10 Sep 2013 16:26:49 +0200
+Subject: [PATCH] test/CMakeLists fix
+
+---
+ test/CMakeLists.txt |   10 ++++++----
+ 1 file changed, 6 insertions(+), 4 deletions(-)
+
+diff --git a/test/CMakeLists.txt b/test/CMakeLists.txt
+index 5b8aa98..c97be18 100644
+--- a/test/CMakeLists.txt
++++ b/test/CMakeLists.txt
+@@ -6,8 +6,10 @@ endif(WIN32)
+ configure_file("${TEST_RESOURCES_DIR}/config.h.in" "${CMAKE_CURRENT_BINARY_DIR}/resources/config.h")
+ include_directories(${CMAKE_CURRENT_BINARY_DIR})
+ 
+-catkin_add_gtest(test_point_inclusion test_point_inclusion.cpp)
+-target_link_libraries(test_point_inclusion ${PROJECT_NAME} ${catkin_LIBRARIES} ${Boost_LIBRARIES})
++if(CATKIN_ENABLE_TESTING)
++  catkin_add_gtest(test_point_inclusion test_point_inclusion.cpp)
++  target_link_libraries(test_point_inclusion ${PROJECT_NAME} ${catkin_LIBRARIES} ${Boost_LIBRARIES})
+ 
+-catkin_add_gtest(test_bounding_sphere test_bounding_sphere.cpp)
+-target_link_libraries(test_bounding_sphere ${PROJECT_NAME} ${catkin_LIBRARIES} ${Boost_LIBRARIES})
++  catkin_add_gtest(test_bounding_sphere test_bounding_sphere.cpp)
++  target_link_libraries(test_bounding_sphere ${PROJECT_NAME} ${catkin_LIBRARIES} ${Boost_LIBRARIES})
++endif()
+-- 
+1.7.9.5
+
