@@ -29,7 +29,7 @@ Also some further work which is not in the scope of the GSOC:
 | **control-msgs** | Ok| |
 | **control-toolbox** | Ok| |
 | **realtime-tools** | Ok| |
-| **robot-model** | urdf-parser-plugin, urdf and resource-retriever cross-compile for now. | |
+| **robot-model** | collada-urdf and kdl-parser still with issues. | |
 | **rosconsole-bridge** | Ok| |
 | **ros-control** | Ok| |
 | **ros-controllers** | Ok | |
@@ -37,11 +37,14 @@ Also some further work which is not in the scope of the GSOC:
 | **urdfdom** | Ok | |
 | **urdfdom-headers** | Ok| |
 | **assimp** | Ok| |
-| **wxpython** | WIP| |
-| **wxwidgets** | WIP| |
-| **eigen** | WIP | |
-| **orocos-kdl** | WIP| |
+| **orocos-kdl** | Ok | |
 | **python-orocos-kdl** | WIP| |
+| **libqhull** | Ok | |
+| **collada-dom** | Ok | |
+| **eigen-stl-containers** | Ok | |
+| **geometric-shapes** | Ok | |
+| **libglu** | Ok | |
+| **octomap** | Ok | |
 
     (bold): Packages out of the scope of the GSOC
 
@@ -54,7 +57,6 @@ Also some further work which is not in the scope of the GSOC:
 * **ros-bb-dc-motors**: recipe to cross-compile a ROS package that activates a DC motor on the BB using the adafruit's library. ([code](https://github.com/vmayoral/ros_bb_dc_motors))
 
 ------
-
 
 
 

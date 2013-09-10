@@ -261,12 +261,15 @@ Week 13:
 What has been accomplished?:
     - eigen recipe available from the meta-ros layer.
     - orocos-kdl recipe completed.
-    - wxwidgets recipe provide by Koen 
+    - new ros_controls related recipes added: geometric-shapes, random-numbers, octomap, libqhull, eigen-stl-containers,shape-tools, collada-dom.
+    - Pull request with ros_controls recipes to the meta-ros repository.
 
 Issues:
     - Turtlesim (ros-tutorials) recipe has been updated but it still doesn't cross-compile. The reasons are discussed here https://groups.google.com/forum/#!topic/beagleboard-gsoc/VXO2vFNPYXE.
-    - wxpython issues. See https://gist.github.com/vmayoral/6496570.
     - python-orocos-kdl
+    - kdl-parser (same issue as with python-orocos-kdl)
+    - collada-urdf
+
     
 Plans for the next week:
     - Merge the ros-control recipes that compile properly with meta-ros.
