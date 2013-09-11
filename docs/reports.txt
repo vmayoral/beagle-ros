@@ -269,6 +269,7 @@ Issues:
     - python-orocos-kdl
     - kdl-parser (same issue as with python-orocos-kdl)
     - collada-urdf
+                take into account Koen's comment: vmayoral: /usr/lib/liboctomap.so <- something is adding /usr/lib, which won't work for cross compiling
 
     
 Plans for the next week:
