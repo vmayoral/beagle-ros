@@ -1,4 +1,5 @@
-DESCRIPTION = "The URDF (U-Robot Description Format) headers provides core data structure headers for URDF."
+DESCRIPTION = "The URDF (U-Robot Description Format) headers provides core \
+data structure headers for URDF."
 SECTION = "devel"
 LICENSE = "BSD"
 LIC_FILES_CHKSUM = "file://LICENSE;md5=b441202ba2d6b14d62026cb18bb960ed"
