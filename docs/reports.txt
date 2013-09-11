@@ -263,6 +263,7 @@ What has been accomplished?:
     - orocos-kdl recipe completed.
     - new ros_controls related recipes added: geometric-shapes, random-numbers, octomap, libqhull, eigen-stl-containers,shape-tools, collada-dom.
     - Pull request with ros_controls recipes to the meta-ros repository.
+    - Pull request to ros_controls/ros_control with the recipes patches (https://github.com/ros-controls/ros_control/pull/114).
 
 Issues:
     - Turtlesim (ros-tutorials) recipe has been updated but it still doesn't cross-compile. The reasons are discussed here https://groups.google.com/forum/#!topic/beagleboard-gsoc/VXO2vFNPYXE.
