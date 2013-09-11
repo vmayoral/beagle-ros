@@ -1,7 +1,7 @@
 DESCRIPTION = "Hardware interface."
 SECTION = "devel"
 LICENSE = "BSD"
-LIC_FILES_CHKSUM = "file://package.xml;beginline=8;endline=8;md5=e8e3efc45e752e4fbc6361c8b1a55689"
+LIC_FILES_CHKSUM = "file://package.xml;beginline=6;endline=6;md5=e8e3efc45e752e4fbc6361c8b1a55689"
 
 DEPENDS = "rostest roscpp hardware-interface urdfdom"
 
