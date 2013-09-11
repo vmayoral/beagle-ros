@@ -1,7 +1,7 @@
-DESCRIPTION = "Hardware interface."
+DESCRIPTION = "Interface for enforcing joint limits."
 SECTION = "devel"
 LICENSE = "BSD"
-LIC_FILES_CHKSUM = "file://package.xml;beginline=6;endline=6;md5=e8e3efc45e752e4fbc6361c8b1a55689"
+LIC_FILES_CHKSUM = "file://package.xml;beginline=6;endline=6;md5=d566ef916e9dedc494f5f793a6690ba5"
 
 DEPENDS = "rostest roscpp hardware-interface urdfdom"
 
