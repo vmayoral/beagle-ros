@@ -259,7 +259,6 @@ Questions:
 Week 13:
 =======
 What has been accomplished?:
-    - eigen recipe available from the meta-ros layer.
     - orocos-kdl recipe completed.
     - new ros_controls related recipes added: geometric-shapes, random-numbers, octomap, libqhull, eigen-stl-containers,shape-tools, collada-dom.
     - Pull request with ros_controls recipes to the meta-ros repository.

@@ -2,7 +2,7 @@ DESCRIPTION = "This package contains a tool for setting and publishing \
 joint state values for a given URDF."
 SECTION = "devel"
 LICENSE = "BSD"
-LIC_FILES_CHKSUM = "file://package.xml;beginline=14;endline=14;md5=f58a44222abe011e35c8da65c1b32d5a"
+LIC_FILES_CHKSUM = "file://package.xml;beginline=9;endline=9;md5=d566ef916e9dedc494f5f793a6690ba5"
 
 DEPENDS = "rospy wxpython sensor-msgs"
 
