@@ -279,3 +279,15 @@ Plans for the next week:
 
 
 
+Week 14:
+=======
+What has been accomplished?:
+    - Testing I2C bus with several sensors.
+
+Issues:
+    - Turtlesim (ros-tutorials) recipe has been updated but it still doesn't cross-compile. The reasons are discussed here https://groups.google.com/forum/#!topic/beagleboard-gsoc/VXO2vFNPYXE.
+    - python-orocos-kdl
+    - kdl-parser (same issue as with python-orocos-kdl)
+    - collada-urdf
+                take into account Koen's comment: vmayoral: /usr/lib/liboctomap.so <- something is adding /usr/lib, which won't work for cross compiling
+    
