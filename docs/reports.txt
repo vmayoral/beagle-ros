@@ -271,12 +271,10 @@ Issues:
     - kdl-parser (same issue as with python-orocos-kdl)
     - collada-urdf
                 take into account Koen's comment: vmayoral: /usr/lib/liboctomap.so <- something is adding /usr/lib, which won't work for cross compiling
-
     
 Plans for the next week:
-    - Merge the ros-control recipes that compile properly with meta-ros.
+    - Finish documentation
     - Continue with the ros_controls recipes and the turtlesim one.
-    - Answer mails and keep improving documentation.
     - Give it a try to vvu|Log BeagleDroid project.
 
 

@@ -5,6 +5,8 @@ SECTION = "devel"
 LICENSE = "BSD"
 LIC_FILES_CHKSUM = "file://LICENSE;md5=b441202ba2d6b14d62026cb18bb960ed"
 
+DEPENDS = "urdfdom-headers console-bridge libtinyxml"
+
 SRC_URI = "https://github.com/ros/${ROS_SPN}/archive/${PV}.tar.gz;downloadfilename=${ROS_SP}.tar.gz"
 SRC_URI[md5sum] = "c2332953b8ee7f4dd23684e700fae14e"
 SRC_URI[sha256sum] = "a918d3ae4366504a93d6af780ac1e706cdffad4b621a363a9bd53c5fbf32fe21"

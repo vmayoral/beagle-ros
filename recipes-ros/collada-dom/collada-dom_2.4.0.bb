@@ -4,7 +4,7 @@ COLLADA XML instance document."
 LICENSE = "Sony Computer Entertainment"
 LIC_FILES_CHKSUM = "file://License_Folder/license_e.txt;md5=33ea5b7341abf67bd9055a229646feae"
 
-DEPENDS = ""
+DEPENDS = "boost libxml2"
 
 SRC_URI = "${SOURCEFORGE_MIRROR}/collada-dom/collada-dom-${PV}.tgz"
 SRC_URI[md5sum] = "20399de4206eab850c32e65c04e907cb"
