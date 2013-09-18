@@ -276,13 +276,17 @@ Plans for the next week:
     - Continue with the ros_controls recipes and the turtlesim one.
     - Give it a try to vvu|Log BeagleDroid project.
 
+-----------------------------
 
+OUT OF GSOC
 
+-----------------------------
 
 Week 14:
 =======
 What has been accomplished?:
     - Testing I2C bus with several sensors.
+    - Reviewing ros_control recipes.
 
 Issues:
     - Turtlesim (ros-tutorials) recipe has been updated but it still doesn't cross-compile. The reasons are discussed here https://groups.google.com/forum/#!topic/beagleboard-gsoc/VXO2vFNPYXE.
@@ -291,3 +295,10 @@ Issues:
     - collada-urdf
                 take into account Koen's comment: vmayoral: /usr/lib/liboctomap.so <- something is adding /usr/lib, which won't work for cross compiling
     
+    - Issue with ros-controllers recipes after updating to 1.10.15. :
+    Make Error at CMakeLists.txt:9 (find_package):
+    |   By not providing "FindTinyXML.cmake" in CMAKE_MODULE_PATH this project has
+    |   asked CMake to find a package configuration file provided by "TinyXML", but
+    |   CMake did not find one.
+
+    This is something known however it keeps appearing even though i did bitbake libtinyxml
