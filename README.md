@@ -2,7 +2,7 @@ BEAGLE-ROS project
 ==================
 
 ![BeagleBone](http://beagleboard.org/static/images/beagle_logo_hdr.gif)
-![ROS](http://www.ros.org/_wiki/images/ros_org.png)
+![ROS](http://wiki.ros.org/custom/images/ros_org.png)
 
 Integration of the Robot Operative System (ROS) and the BeagleBone through the [meta-ros](https://github.com/bmwcarit/meta-ros) project, a layer for OpenEmbedded Linux.
 
