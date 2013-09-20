@@ -7,9 +7,9 @@ DEPENDS = "hardware-interface cmake-modules libtinyxml"
 
 require ros-control.inc
 
-SRC_URI += "file://0001-transmission-interface-fix2.patch;striplevel=2;name=patch"
-SRC_URI[patch.md5sum] = "652e61a240baa2954c789fedc285654c"
-SRC_URI[patch.sha256sum] = "2b0268d19ab708b4ec2e897017edd2b2a03c2a336b916e0cee5248e390627ab1"
+#SRC_URI += "file://0001-transmission-interface-fix2.patch;striplevel=2;name=patch"
+#SRC_URI[patch.md5sum] = "652e61a240baa2954c789fedc285654c"
+#SRC_URI[patch.sha256sum] = "2b0268d19ab708b4ec2e897017edd2b2a03c2a336b916e0cee5248e390627ab1"
 
 
 SRC_URI += "file://0001-transmission-interface-comment-gtests.patch;striplevel=2;name=patch2"
