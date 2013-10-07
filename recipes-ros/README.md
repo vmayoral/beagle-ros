@@ -3,6 +3,13 @@ Recipes:
 
 The following directories contain bitbake recipes for cross-compiling different ROS packages.
 
+
+----
+
+**Update: the recipes that have been merged in the [meta-ros](https://github.com/bmwcarit/meta-ros) layer have been removed.**
+
+----
+
 ##Summary:
 
 | Recipe        | Status (cross-compilation)       | Test (BeagleBone) |
