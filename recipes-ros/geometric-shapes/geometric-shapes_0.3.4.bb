@@ -3,7 +3,7 @@ SECTION = "devel"
 LICENSE = "BSD"
 LIC_FILES_CHKSUM = "file://package.xml;beginline=8;endline=8;md5=5ee5b8b046ae48ad94a2037ca953a67b"
 
-DEPENDS = "boost shape-msgs shape-tools octomap assimp eigen libqhull console-bridge random-numbers eigen-stl-containers resource-retriever"
+DEPENDS = "boost shape-msgs shape-tools octomap assimp libeigen2 libqhull console-bridge random-numbers eigen-stl-containers resource-retriever"
 
 SRC_URI = "https://github.com/ros-planning/${ROS_SPN}/archive/${PV}.tar.gz;downloadfilename=${ROS_SP}.tar.gz"
 SRC_URI[md5sum] = "9c248026c6886194318b086185852a40"
