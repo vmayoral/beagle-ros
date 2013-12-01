@@ -17,6 +17,13 @@ It's highly recommended to have the last version of Angstrom.
 
 --------
 
+--------
+
+**The Angstrom Distribution web is temporary down. If you wish to set Angstrom up follow [http://www.angstrom-distribution.org/](these instructions).**
+
+--------
+
+
 ##Description of the files:
 
 * **LICENSE**: License of the code.
