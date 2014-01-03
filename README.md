@@ -54,7 +54,7 @@ USAGE
 =====
 ##Getting roscore running
 
-* Get an Angstrom distribution following http://www.angstrom-distribution.org/building-angstrom.
+* Get an Angstrom distribution following http://www.angstrom-distribution.org.
 
 * Put the MLO, u-boot and FS in the SD card as explained in http://downloads.angstrom-distribution.org/demo/beaglebone/.
 
