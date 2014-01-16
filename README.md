@@ -23,6 +23,12 @@ It's highly recommended to have the last version of Angstrom.
 
 --------
 
+--------
+
+**As answered in the [FAQ](https://github.com/vmayoral/beagle-ros/wiki/FAQ#where-should-i-install-angstrom), Angstrom should NOT be installed in the BeagleBone Black.**
+
+--------
+
 
 ##Description of the files:
 
